@@ -1,7 +1,7 @@
 import test from '../../../../config/testManager'
 
 // We can use steps like this to reproduce Cucumber formatting
-test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, toastTuUltimoCarritoHaSidoRecuperado, tiendaRetiroDrive, seleccionaTiendaBotonContinuar, retiroDriveSuperProv, retiroDriveSuperProvCiudAutonoBsAs, retiroDriveSuperProvCiudAutonoBsAsPartido, retiroDriveSuperProvCiudAutonoBsAsPartidoAgronomia, retiroDriveSuperProvCiudAutonoBsAsPartidoAgronomiaHVUrquiza, menuHamburguesa, menuHamburLacteosProdsFrescos}) => {
+test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, toastTuUltimoCarritoHaSidoRecuperado, tiendaRetiroDrive, seleccionaTiendaBotonContinuar, retiroDriveSuperProv, retiroDriveSuperProvCiudAutonoBsAs, retiroDriveSuperProvCiudAutonoBsAsPartido, retiroDriveSuperProvCiudAutonoBsAsPartidoAgronomia, retiroDriveSuperProvCiudAutonoBsAsPartidoAgronomiaHVUrquiza, modalSuscribite, menuHamburguesa, menuHamburLacteosProdsFrescos}) => {
     await test.step('Navigate to Carrefour page and Accept Cookies', async () => {
         await mainPageAndAcceptCookies.navigateToMainPageAndAcceptCookies()
     })
@@ -47,6 +47,9 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, 
     await test.step('Click en el boton CONTINAUR > del modal Puntos de retiro en tu zona', async () => {
         await seleccionaTiendaBotonContinuar.clickSelecTiendaBotonContinuar()
     })
+    await test.step('Click en la X para cerrar el modal Suscribite', async () => {
+        await modalSuscribite.navigateToModalSuscribiteAndClose()
+    })
     await test.step(`Clickear el Menu Hamburguesa`, async () => {
         await menuHamburguesa.navigateToMenuHamburguesa()
     })
@@ -60,5 +63,6 @@ test('@Regression @TestTiendaSupermercado (B2C-TC-1102) Verificar que al clickea
     await test.step('Click en Lacteos y Productos Frescos VER TODO', async () => {
         await menuHamburLacteosProdsFrescosVerTodo.clickLacteosProdsFrescosVerTodo()
     })
+
 })
 

@@ -1063,7 +1063,7 @@ import {
 import {
     MenuHamburPerfumeriaVerTodos
 } from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaVerTodos'
-import { ModalSuscribite } from '../pageObjectModel/Carrito/ModalSuscribite'
+import { ModalSuscribite } from '../pageObjectModel/ModalAndToast/ModalSuscribite'
 import { OnlyAcceptCookies } from '../pageObjectModel/OnlyAcceptCookies'
 import {
     CerrarModalComoQueresRecibirCompra
@@ -1553,6 +1553,11 @@ const test = baseTest.extend<{
 
 
 
+    //MODAL AND TOAST
+    modalSuscribite: async ({ page, context }, use) => {
+        await use(new ModalSuscribite(page, context, environment))
+    },
+
 
     // CARRITO
     toastTuUltimoCarritoHaSidoRecuperado: async ({ page, context }, use) => {
@@ -1563,9 +1568,6 @@ const test = baseTest.extend<{
     },
     carritoHome: async ({ page, context }, use) => {
         await use(new CarritoHome(page, context, environment))
-    },
-    modalSuscribite: async ({ page, context }, use) => {
-        await use(new ModalSuscribite(page, context, environment))
     },
     cerrarModalComoQueresRecibirCompra: async ({ page, context }, use) => {
         await use(new CerrarModalComoQueresRecibirCompra(page, context, environment))

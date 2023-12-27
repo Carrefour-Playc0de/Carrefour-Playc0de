@@ -18,7 +18,7 @@ export class MenuHamburDestacados extends BasePage {
         await this.click(this.DESTACADOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        // await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburDestacados(): Promise<void> {

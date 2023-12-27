@@ -18,7 +18,7 @@ export class MenuHamburCarnesPescados extends BasePage {
         await this.click(this.CARNES_PESCADOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        // await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburCarnesPescados(): Promise<void> {

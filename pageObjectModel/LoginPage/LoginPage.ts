@@ -29,7 +29,7 @@ export class LoginPage extends BasePage {
         await this.click(this.LOGIN_MAIL_PASSWORD_BUTTON)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        // await this.page.waitForTimeout(3000)
     }
     async fillCredentials(): Promise<void> {
         await this.fill(this.USERNAME_INPUT, this.env.username)
