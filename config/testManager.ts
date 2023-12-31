@@ -1069,6 +1069,7 @@ import {
     CerrarModalComoQueresRecibirCompra
 } from '../pageObjectModel/SeleccionaTienda/CerrarModalComoQueresRecibirCompra'
 import { MainHomePage } from '../pageObjectModel/MainHomePage'
+import { CarritoProductos } from '../pageObjectModel/Carrito/CarritoProductos'
 
 
 
@@ -1490,6 +1491,7 @@ const test = baseTest.extend<{
     onlyAcceptCookies: OnlyAcceptCookies
     mainHomePage: MainHomePage
     cerrarModalComoQueresRecibirCompra: CerrarModalComoQueresRecibirCompra
+    carritoProductos: CarritoProductos
 
 
 }>({
@@ -1572,6 +1574,12 @@ const test = baseTest.extend<{
     cerrarModalComoQueresRecibirCompra: async ({ page, context }, use) => {
         await use(new CerrarModalComoQueresRecibirCompra(page, context, environment))
     },
+    carritoProductos: async ({ page, context }, use) => {
+        await use(new CarritoProductos(page, context, environment))
+    },
+
+
+
 
 
 

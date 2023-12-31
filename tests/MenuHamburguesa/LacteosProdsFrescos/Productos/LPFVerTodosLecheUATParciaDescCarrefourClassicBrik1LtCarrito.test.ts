@@ -1,7 +1,7 @@
 import test from '../../../../config/testManager'
 
 // We can use steps like this to reproduce Cucumber formatting
-test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, toastTuUltimoCarritoHaSidoRecuperado, tiendaRetiroDrive, seleccionaTiendaBotonContinuar, retiroDriveSuperProv, retiroDriveSuperProvCiudAutonoBsAs, retiroDriveSuperProvCiudAutonoBsAsPartido, retiroDriveSuperProvCiudAutonoBsAsPartidoAgronomia, retiroDriveSuperProvCiudAutonoBsAsPartidoAgronomiaHVUrquiza, modalSuscribite, menuHamburguesa, menuHamburLacteosProdsFrescos}) => {
+test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, toastTuUltimoCarritoHaSidoRecuperado, tiendaRetiroDrive, seleccionaTiendaBotonContinuar, retiroDriveSuperProv, retiroDriveSuperProvCiudAutonoBsAs, retiroDriveSuperProvCiudAutonoBsAsPartido, retiroDriveSuperProvCiudAutonoBsAsPartidoAgronomia, retiroDriveSuperProvCiudAutonoBsAsPartidoAgronomiaHVUrquiza, modalSuscribite, menuHamburguesa, menuHamburLacteosProdsFrescos, menuHamburLacteosProdsFrescosVerTodo, lPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt, }) => {
     await test.step('Navigate to Carrefour page and Accept Cookies', async () => {
         await mainPageAndAcceptCookies.navigateToMainPageAndAcceptCookies()
     })
@@ -56,12 +56,18 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, 
     await test.step(`Click en Lacteos y Productos Frescos`, async () => {
         await menuHamburLacteosProdsFrescos.navigateToMenuHamburLacteosProdsFrescos()
     })
-
-})
-
-test('@Regression @TestTiendaSupermercado (B2C-TC-1102) Verificar que al clickear en Leche UAT parcialmente descremada Carrefour classic brik 1Lt funciona correctamente', async ({menuHamburLacteosProdsFrescosVerTodo}) => {
     await test.step('Click en Lacteos y Productos Frescos VER TODO', async () => {
         await menuHamburLacteosProdsFrescosVerTodo.clickLacteosProdsFrescosVerTodo()
+    })
+    await test.step('Click en Leche UAT parcialmente descremada Carrefour classic brik 1Lt', async () => {
+        await lPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt.navigateToLPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt()
+    })
+})
+
+test('@Regression @TestTiendaSupermercado (B2C-TC-1103) Verificar que al clickear el carrito de Leche UAT parcialmente descremada Carrefour classic brik 1Lt funciona correctamente', async ({carritoProductos}) => {
+
+    await test.step('Click en el carrito Leche UAT parcialmente descremada Carrefour classic brik 1Lt', async () => {
+        await carritoProductos.navigateToCarritoProductos()
     })
 
 })

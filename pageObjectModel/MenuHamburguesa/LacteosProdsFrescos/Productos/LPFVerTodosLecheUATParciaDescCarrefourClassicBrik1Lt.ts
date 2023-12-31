@@ -12,14 +12,14 @@ export class LPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt extends BasePa
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.LECHE_UAT_DESC_CARREFOUR = this.page.locator('//span[contains(text(),\'Leche UAT parcialmente descremada Carrefour classi\')]')
+        this.LECHE_UAT_DESC_CARREFOUR = this.page.locator('//span[contains(text(),"Leche UAT parcialmente descremada Carrefour classi")]')
     }
 
     async clickLPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt(): Promise<void> {
         await this.click(this.LECHE_UAT_DESC_CARREFOUR)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        // await this.page.waitForTimeout(3000)
     }
 
     async navigateToLPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt(): Promise<void> {

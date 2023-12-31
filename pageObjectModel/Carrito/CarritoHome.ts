@@ -11,7 +11,8 @@ export class CarritoHome extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.CARRITO = this.page.locator('//div[@class=\'valtech-carrefourar-minicart-quantity-total-0-x-quantityTotal\']//*[name()=\'svg\']')
+        this.CARRITO = this.page.locator('//span[@class="vtex-minicart-2-x-minicartIconContainer gray relative"]//div[@class="valtech-carrefourar-minicart-quantity-total-0-x-quantityTotal"]')
+        // this.CARRITO = this.page.locator('//span[@class=”vtex-minicart-2-x-minicartIconContainer gray relative”]//div[@class=”valtech-carrefourar-minicart-quantity-total-0-x-quantityTotal”]//*[name()=”svg”]//*[name()=”use” and contains(@href,”#hpa-cart”)]')
     }
 
     async clickCarritoHome(): Promise<void> {

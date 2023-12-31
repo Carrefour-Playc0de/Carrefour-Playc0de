@@ -18,7 +18,7 @@ export class MenuHamburIndumentaria extends BasePage {
         await this.click(this.INDUMENTARIA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        // await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburIndumentaria(): Promise<void> {

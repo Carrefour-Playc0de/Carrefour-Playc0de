@@ -18,7 +18,7 @@ export class MenuHamburFrutasVerduras extends BasePage {
         await this.click(this.FRUTAS_VERDURAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        // await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburFrutasVerduras(): Promise<void> {
