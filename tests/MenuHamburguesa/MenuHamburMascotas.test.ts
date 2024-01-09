@@ -10,7 +10,7 @@ test.beforeEach(async ({mainPageAndAcceptCookies, menuHamburguesa}) => {
     })
 })
 
-test('@Regression @SmokeMenuHamburguesa (B2C-TC-1106) Verificar que al clickear en Menu Mascotas funciona correctamente', async ({menuHamburMascotas}) => {
+test('@Smoke @Regression (B2C-TC-1106) Verificar que al clickear en Menu Mascotas funciona correctamente', async ({menuHamburMascotas}) => {
 
     await test.step('Click en Mascotas', async () => {
         await menuHamburMascotas.clickMascotas()

@@ -13,13 +13,13 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, menuHamburguesa, menuHamburPe
     })
 })
 
-test('@Smoke @Regression @MenuHamburguesa (B2C-TC-1113) Verificar que funciona el Menu Perfumería: VER TODO', async ({menuHamburPerfumeriaVerTodos}) => {
+test('@Smoke @Regression (B2C-TC-1113) Verificar que funciona el Menu Perfumería: VER TODO', async ({menuHamburPerfumeriaVerTodos}) => {
 
     await test.step('Click en Perfumería VER TODO', async () => {
         await menuHamburPerfumeriaVerTodos.clickPerfumeriaVerTodos()
     })
 })
-test('@Smoke @Regression @MenuHamburguesa (B2C-TC-336) Verificar que funciona el Menu Perfumería: Cuidado del Cabello', async ({menuHamburPerfumeriaCuidadoDelCabello}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-336) Verificar que funciona el Menu Perfumería: Cuidado del Cabello', async ({menuHamburPerfumeriaCuidadoDelCabello}) => {
 
     await test.step('Click en Cuidado del Cabello', async () => {
         await menuHamburPerfumeriaCuidadoDelCabello.clickPerfumeriaCuidadoDelCabello()

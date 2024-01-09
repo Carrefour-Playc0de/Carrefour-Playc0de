@@ -13,13 +13,13 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, menuHamburguesa, menuHamburMu
     })
 })
 
-test('@Smoke @Regression @MenuHamburguesa (B2C-TC-1114) Verificar que funciona el Menu Mundo Bebe: VER TODO', async ({menuHamburMundoBebeVerTodos}) => {
+test('@Smoke @Regression (B2C-TC-1114) Verificar que funciona el Menu Mundo Bebe: VER TODO', async ({menuHamburMundoBebeVerTodos}) => {
 
     await test.step('Click en Mundo Bebe VER TODO', async () => {
         await menuHamburMundoBebeVerTodos.clickMundoBebeVerTodos()
     })
 })
-test('@Smoke @Regression @MenuHamburguesa (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Paniales', async ({menuHamburMundoBebePaniales}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Paniales', async ({menuHamburMundoBebePaniales}) => {
 
     await test.step('Click en Paniales', async () => {
         await menuHamburMundoBebePaniales.clickMundoBebePaniales()

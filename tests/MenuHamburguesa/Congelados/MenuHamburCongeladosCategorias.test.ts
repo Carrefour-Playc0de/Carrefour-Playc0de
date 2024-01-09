@@ -13,13 +13,13 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, menuHamburguesa, menuHamburCo
     })
 })
 
-test('@Smoke @Regression @MenuHamburguesa (B2C-TC-1088) Verificar que funciona el Menu Congelados: VER TODO', async ({menuHamburCongeladosVerTodos}) => {
+test('@Smoke @Regression (B2C-TC-1088) Verificar que funciona el Menu Congelados: VER TODO', async ({menuHamburCongeladosVerTodos}) => {
 
     await test.step('Click en Congelados VER TODO', async () => {
         await menuHamburCongeladosVerTodos.clickCongeladosVerTodos()
     })
 })
-test('@Smoke @Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Hamburguesas', async ({menuHamburCongeladosHamburguesas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Hamburguesas', async ({menuHamburCongeladosHamburguesas}) => {
 
     await test.step('Click en Hamburguesas', async () => {
         await menuHamburCongeladosHamburguesas.clickCongeladosHamburguesas()

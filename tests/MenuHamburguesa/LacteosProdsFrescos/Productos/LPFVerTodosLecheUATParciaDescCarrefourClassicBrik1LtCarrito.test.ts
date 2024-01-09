@@ -47,28 +47,30 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, 
     await test.step('Click en el boton CONTINAUR > del modal Puntos de retiro en tu zona', async () => {
         await seleccionaTiendaBotonContinuar.clickSelecTiendaBotonContinuar()
     })
+    // await test.step(`Clickear el Menu Hamburguesa`, async () => {
+    //     await menuHamburguesa.navigateToMenuHamburguesa()
+    // })
+    // await test.step(`Click en Lacteos y Productos Frescos`, async () => {
+    //     await menuHamburLacteosProdsFrescos.navigateToMenuHamburLacteosProdsFrescos()
+    // })
+    // await test.step('Click en Lacteos y Productos Frescos VER TODO', async () => {
+    //     await menuHamburLacteosProdsFrescosVerTodo.clickLacteosProdsFrescosVerTodo()
+    // })
+    // await test.step('Click en Leche UAT parcialmente descremada Carrefour classic brik 1Lt', async () => {
+    //     await lPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt.navigateToLPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt()
+    // })
+})
+
+test('@Regression @TestTiendaSupermercado (B2C-TC-1103) Verificar que al clickear el carrito de Leche UAT parcialmente descremada Carrefour classic brik 1Lt funciona correctamente', async ({modalSuscribite}) => {
+
     await test.step('Click en la X para cerrar el modal Suscribite', async () => {
         await modalSuscribite.navigateToModalSuscribiteAndClose()
     })
-    await test.step(`Clickear el Menu Hamburguesa`, async () => {
-        await menuHamburguesa.navigateToMenuHamburguesa()
-    })
-    await test.step(`Click en Lacteos y Productos Frescos`, async () => {
-        await menuHamburLacteosProdsFrescos.navigateToMenuHamburLacteosProdsFrescos()
-    })
-    await test.step('Click en Lacteos y Productos Frescos VER TODO', async () => {
-        await menuHamburLacteosProdsFrescosVerTodo.clickLacteosProdsFrescosVerTodo()
-    })
-    await test.step('Click en Leche UAT parcialmente descremada Carrefour classic brik 1Lt', async () => {
-        await lPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt.navigateToLPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt()
-    })
-})
 
-test('@Regression @TestTiendaSupermercado (B2C-TC-1103) Verificar que al clickear el carrito de Leche UAT parcialmente descremada Carrefour classic brik 1Lt funciona correctamente', async ({carritoProductos}) => {
 
-    await test.step('Click en el carrito Leche UAT parcialmente descremada Carrefour classic brik 1Lt', async () => {
-        await carritoProductos.navigateToCarritoProductos()
-    })
+    // await test.step('Click en el carrito Leche UAT parcialmente descremada Carrefour classic brik 1Lt', async () => {
+    //     await carritoProductos.navigateToCarritoProductos()
+    // })
 
 })
 
