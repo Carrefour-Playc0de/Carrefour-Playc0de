@@ -2,9 +2,9 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from './commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../config/configLoader'
 
-export class MainHomePage extends BasePage {
+export class UrlCarrefour extends BasePage {
 
-    readonly HOME_PAGE: Locator
+    // readonly URL_CARREFOUR: Locator
 
     private env: any
 
@@ -12,16 +12,15 @@ export class MainHomePage extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.HOME_PAGE = this.page.locator("//div[@class='vtex-store-header-2-x-headerRowContainer w-100 flex items-center']//img[@alt='Logo']")
     }
 
-    async clickHomePageLogo(): Promise<void> {
-        await this.click(this.HOME_PAGE)
+    async UrlCarrefour(): Promise<void> {
+        // await this.page.goto('https://www.carrefour.com.ar/')
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
     }
 
-    async navigateToMainHomePagen(): Promise<void> {
-        await this.clickHomePageLogo()
+    async navigateToUrlCarrefour(): Promise<void> {
+        await this.UrlCarrefour()
     }
 }

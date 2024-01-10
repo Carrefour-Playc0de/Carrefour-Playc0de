@@ -18,6 +18,7 @@ export class SeleccionaTiendaBotonContinuar extends BasePage {
         await this.click(this.CONTINUAR)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
+        await this.page.waitForLoadState("domcontentloaded")
     }
 
     async navigateToSelecTiendaBotonContinuar(): Promise<void> {

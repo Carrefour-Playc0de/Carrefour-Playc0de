@@ -1070,6 +1070,8 @@ import {
 } from '../pageObjectModel/SeleccionaTienda/CerrarModalComoQueresRecibirCompra'
 import { MainHomePage } from '../pageObjectModel/MainHomePage'
 import { CarritoProductos } from '../pageObjectModel/Carrito/CarritoProductos'
+import { UrlCarrefour } from '../pageObjectModel/UrlCarrefour'
+import { CarritoBotonPlusProductoUno } from '../pageObjectModel/Carrito/CarritoBotonPlusProductoUno'
 
 
 
@@ -1492,6 +1494,8 @@ const test = baseTest.extend<{
     mainHomePage: MainHomePage
     cerrarModalComoQueresRecibirCompra: CerrarModalComoQueresRecibirCompra
     carritoProductos: CarritoProductos
+    urlCarrefour: UrlCarrefour
+    carritoBotonPlusProductoUno: CarritoBotonPlusProductoUno
 
 
 }>({
@@ -1508,7 +1512,41 @@ const test = baseTest.extend<{
     mainHomePage: async ({ page, context }, use) => {
         await use(new MainHomePage(page, context, environment))
     },
+    urlCarrefour: async ({ page, context }, use) => {
+        await use(new UrlCarrefour(page, context, environment))
+    },
 
+
+
+
+
+
+    // CARRITO
+    toastTuUltimoCarritoHaSidoRecuperado: async ({ page, context }, use) => {
+        await use(new ToastTuUltimoCarritoHaSidoRecuperado(page, context, environment))
+    },
+    urlProductosCarrito: async ({ page, context }, use) => {
+        await use(new UrlProductosCarrito(page, context, environment))
+    },
+    carritoHome: async ({ page, context }, use) => {
+        await use(new CarritoHome(page, context, environment))
+    },
+    cerrarModalComoQueresRecibirCompra: async ({ page, context }, use) => {
+        await use(new CerrarModalComoQueresRecibirCompra(page, context, environment))
+    },
+    carritoProductos: async ({ page, context }, use) => {
+        await use(new CarritoProductos(page, context, environment))
+    },
+    carritoBotonPlusProductoUno: async ({ page, context }, use) => {
+        await use(new CarritoBotonPlusProductoUno(page, context, environment))
+    },
+
+
+
+    //MODALS
+    modalSuscribite: async ({ page, context }, use) => {
+        await use(new ModalSuscribite(page, context, environment))
+    },
 
 
     //TIENDA - RETIRO O DRIVE
@@ -1552,47 +1590,6 @@ const test = baseTest.extend<{
     urlLecheUATParciaDescCarrefourClassicBrik1Lt: async ({ page, context }, use) => {
         await use(new UrlLecheUATParciaDescCarrefourClassicBrik1Lt(page, context, environment))
     },
-
-
-
-    //MODAL AND TOAST
-    modalSuscribite: async ({ page, context }, use) => {
-        await use(new ModalSuscribite(page, context, environment))
-    },
-
-
-    // CARRITO
-    toastTuUltimoCarritoHaSidoRecuperado: async ({ page, context }, use) => {
-        await use(new ToastTuUltimoCarritoHaSidoRecuperado(page, context, environment))
-    },
-    urlProductosCarrito: async ({ page, context }, use) => {
-        await use(new UrlProductosCarrito(page, context, environment))
-    },
-    carritoHome: async ({ page, context }, use) => {
-        await use(new CarritoHome(page, context, environment))
-    },
-    cerrarModalComoQueresRecibirCompra: async ({ page, context }, use) => {
-        await use(new CerrarModalComoQueresRecibirCompra(page, context, environment))
-    },
-    carritoProductos: async ({ page, context }, use) => {
-        await use(new CarritoProductos(page, context, environment))
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

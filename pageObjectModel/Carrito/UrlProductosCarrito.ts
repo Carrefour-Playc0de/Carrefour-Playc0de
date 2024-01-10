@@ -11,7 +11,7 @@ export class UrlProductosCarrito extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.CARRITO = this.page.locator('//div[@class=\'valtech-carrefourar-incompatible-cart-1-x-container valtech-carrefourar-incompatible-cart-1-x-isAvailable \']//div[@class=\'vtex-button__label flex items-center justify-center h-100 ph6 \']')
+        this.CARRITO = this.page.locator("//div[@class='valtech-carrefourar-incompatible-cart-1-x-container valtech-carrefourar-incompatible-cart-1-x-isAvailable ']//div[@class='vtex-button__label flex items-center justify-center h-100 ph6 ']")
 
     }
 
