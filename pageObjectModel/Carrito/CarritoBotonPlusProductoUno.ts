@@ -11,11 +11,15 @@ export class CarritoBotonPlusProductoUno extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.BOTON_PLUS = this.page.locator('//div [contains(@class,"valtech-carrefourar-cart-quantity-0-x-cartQuantity")]//button[contains(@aria-label,"+")]')
+        this.BOTON_PLUS = this.page.locator("//button[contains(@aria-label,'+')]")
+        // this.BOTON_PLUS = this.page.locator("//div[@class='vtex-numeric-stepper__plus-button-container numeric-stepper__plus-button-container z-2 order-2 flex-none']")
     }
 
     async clickBotonPlusProductoUno(): Promise<void> {
-        await this.click(this.BOTON_PLUS)
+        for (let i = 0; i < 4; i++) {
+            await this.click(this.BOTON_PLUS)
+        }
+        await this.page.waitForTimeout(3000)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
     }
@@ -24,3 +28,4 @@ export class CarritoBotonPlusProductoUno extends BasePage {
         await this.clickBotonPlusProductoUno()
     }
 }
+

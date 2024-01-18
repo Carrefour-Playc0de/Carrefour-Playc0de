@@ -1072,6 +1072,7 @@ import { MainHomePage } from '../pageObjectModel/MainHomePage'
 import { CarritoProductos } from '../pageObjectModel/Carrito/CarritoProductos'
 import { UrlCarrefour } from '../pageObjectModel/UrlCarrefour'
 import { CarritoBotonPlusProductoUno } from '../pageObjectModel/Carrito/CarritoBotonPlusProductoUno'
+import { CarritoBotonFinalizarCompra } from '../pageObjectModel/Carrito/CarritoBotonFinalizarCompra'
 
 
 
@@ -1496,6 +1497,7 @@ const test = baseTest.extend<{
     carritoProductos: CarritoProductos
     urlCarrefour: UrlCarrefour
     carritoBotonPlusProductoUno: CarritoBotonPlusProductoUno
+    carritoBotonFinalizarCompra: CarritoBotonFinalizarCompra
 
 
 }>({
@@ -1540,6 +1542,11 @@ const test = baseTest.extend<{
     carritoBotonPlusProductoUno: async ({ page, context }, use) => {
         await use(new CarritoBotonPlusProductoUno(page, context, environment))
     },
+    carritoBotonFinalizarCompra: async ({ page, context }, use) => {
+        await use(new CarritoBotonFinalizarCompra(page, context, environment))
+    },
+
+
 
 
 

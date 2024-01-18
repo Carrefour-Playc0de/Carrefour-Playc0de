@@ -17,9 +17,9 @@ export class CarritoHome extends BasePage {
 
     async clickCarritoHome(): Promise<void> {
         await this.click(this.CARRITO)
+        await this.page.waitForTimeout(3000)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        // await this.page.waitForTimeout(3000)
     }
 
     async navigateToCarritoHome(): Promise<void> {

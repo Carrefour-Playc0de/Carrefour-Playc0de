@@ -15,6 +15,7 @@ export class CarritoBotonFinalizarCompra extends BasePage {
     }
 
     async clickBotonFinalizarCompra(): Promise<void> {
+        await this.page.waitForTimeout(3000)
         await this.click(this.BOTON_FINALIZAR_COMPRA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
