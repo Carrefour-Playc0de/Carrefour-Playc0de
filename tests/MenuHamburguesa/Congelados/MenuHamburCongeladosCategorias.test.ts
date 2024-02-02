@@ -25,3 +25,26 @@ test('@Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu C
         await menuHamburCongeladosHamburguesas.clickCongeladosHamburguesas()
     })
 })
+test('@ABCD @Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Nuggets Rebozados', async ({menuHamburCongeladosNuggetsRebozados}) => {
+
+    await test.step('Click en Nuggets Rebozados', async () => {
+        await menuHamburCongeladosNuggetsRebozados.clickCongeladosNuggetsRebozados()
+    })
+})
+test('@ABCD @Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Papas', async ({menuHamburCongeladosPapas}) => {
+
+    await test.step('Click en Papas', async () => {
+        await menuHamburCongeladosPapas.clickCongeladosPapas()
+    })
+})
+
+
+
+
+
+
+
+
+
+
+

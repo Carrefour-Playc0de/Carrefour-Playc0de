@@ -1073,6 +1073,10 @@ import { CarritoProductos } from '../pageObjectModel/Carrito/CarritoProductos'
 import { UrlCarrefour } from '../pageObjectModel/UrlCarrefour'
 import { CarritoBotonPlusProductoUno } from '../pageObjectModel/Carrito/CarritoBotonPlusProductoUno'
 import { CarritoBotonFinalizarCompra } from '../pageObjectModel/Carrito/CarritoBotonFinalizarCompra'
+import {
+    MenuHamburCongeladosNuggetsRebozados
+} from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosNuggetsRebozados'
+import { MenuHamburCongeladosPapas } from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosPapas'
 
 
 
@@ -1498,6 +1502,8 @@ const test = baseTest.extend<{
     urlCarrefour: UrlCarrefour
     carritoBotonPlusProductoUno: CarritoBotonPlusProductoUno
     carritoBotonFinalizarCompra: CarritoBotonFinalizarCompra
+    menuHamburCongeladosNuggetsRebozados: MenuHamburCongeladosNuggetsRebozados
+    menuHamburCongeladosPapas: MenuHamburCongeladosPapas
 
 
 }>({
@@ -1518,6 +1524,20 @@ const test = baseTest.extend<{
         await use(new UrlCarrefour(page, context, environment))
     },
 
+
+    // MENU HAMBURGUESA - CONGELADOS
+    menuHamburCongeladosVerTodos: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosVerTodos(page, context, environment))
+    },
+    menuHamburCongeladosHamburguesas: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosHamburguesas(page, context, environment))
+    },
+    menuHamburCongeladosNuggetsRebozados: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosNuggetsRebozados(page, context, environment))
+    },
+    menuHamburCongeladosPapas: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosPapas(page, context, environment))
+    },
 
 
 
@@ -2272,15 +2292,6 @@ const test = baseTest.extend<{
     },
     menuHamburDesayunoMeriendaYerba: async ({ page, context }, use) => {
         await use(new MenuHamburDesayunoMeriendaYerba(page, context, environment))
-    },
-
-
-    // MENU HAMBURGUESA - CONGELADOS
-    menuHamburCongeladosVerTodos: async ({ page, context }, use) => {
-        await use(new MenuHamburCongeladosVerTodos(page, context, environment))
-    },
-    menuHamburCongeladosHamburguesas: async ({ page, context }, use) => {
-        await use(new MenuHamburCongeladosHamburguesas(page, context, environment))
     },
 
 
