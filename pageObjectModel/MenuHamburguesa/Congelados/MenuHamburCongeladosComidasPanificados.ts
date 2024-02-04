@@ -19,7 +19,7 @@ export class MenuHamburCongeladosComidasPanificados extends BasePage {
         await this.click(this.COMIDAS_PANIFICADOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(5000)
     }
 
     async navigateToMenuHamburCongeladosComidasPanificados(): Promise<void> {

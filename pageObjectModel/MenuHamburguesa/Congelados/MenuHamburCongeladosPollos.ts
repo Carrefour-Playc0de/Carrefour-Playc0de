@@ -12,14 +12,14 @@ export class MenuHamburCongeladosPollos extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.POLLOS = this.page.locator('//a [@id="menu-item-category-papel-higienico"]');
+        this.POLLOS = this.page.locator("(//div[contains(text(),'Pollos')])[1]");
     }
 
     async clickCongeladosPollos(): Promise<void> {
         await this.click(this.POLLOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(5000)
     }
 
     async navigateToMenuHamburCongeladosPollos(): Promise<void> {

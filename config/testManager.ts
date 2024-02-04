@@ -1077,6 +1077,19 @@ import {
     MenuHamburCongeladosNuggetsRebozados
 } from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosNuggetsRebozados'
 import { MenuHamburCongeladosPapas } from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosPapas'
+import {
+    MenuHamburCongeladosVerdurasFrutas
+} from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosVerdurasFrutas'
+import {
+    MenuHamburCongeladosComidasPanificados
+} from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosComidasPanificados'
+import {
+    MenuHamburCongeladosHeladosPostres
+} from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosHeladosPostres'
+import { MenuHamburCongeladosPollos } from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosPollos'
+import {
+    MenuHamburCongeladosPescadosMariscos
+} from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosPescadosMariscos'
 
 
 
@@ -1504,6 +1517,11 @@ const test = baseTest.extend<{
     carritoBotonFinalizarCompra: CarritoBotonFinalizarCompra
     menuHamburCongeladosNuggetsRebozados: MenuHamburCongeladosNuggetsRebozados
     menuHamburCongeladosPapas: MenuHamburCongeladosPapas
+    menuHamburCongeladosVerdurasFrutas: MenuHamburCongeladosVerdurasFrutas
+    menuHamburCongeladosComidasPanificados: MenuHamburCongeladosComidasPanificados
+    menuHamburCongeladosHeladosPostres: MenuHamburCongeladosHeladosPostres
+    menuHamburCongeladosPollos: MenuHamburCongeladosPollos
+    menuHamburCongeladosPescadosMariscos: MenuHamburCongeladosPescadosMariscos
 
 
 }>({
@@ -1538,6 +1556,22 @@ const test = baseTest.extend<{
     menuHamburCongeladosPapas: async ({ page, context }, use) => {
         await use(new MenuHamburCongeladosPapas(page, context, environment))
     },
+    menuHamburCongeladosVerdurasFrutas: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosVerdurasFrutas(page, context, environment))
+    },
+    menuHamburCongeladosComidasPanificados: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosComidasPanificados(page, context, environment))
+    },
+    menuHamburCongeladosHeladosPostres: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosHeladosPostres(page, context, environment))
+    },
+    menuHamburCongeladosPollos: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosPollos(page, context, environment))
+    },
+    menuHamburCongeladosPescadosMariscos: async ({ page, context }, use) => {
+        await use(new MenuHamburCongeladosPescadosMariscos(page, context, environment))
+    },
+
 
 
 

@@ -19,7 +19,7 @@ export class MenuHamburCongeladosNuggetsRebozados extends BasePage {
         await this.click(this.NUGGETS_REBOZADOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(5000)
     }
 
     async navigateToMenuHamburCongeladosNuggetsRebozados(): Promise<void> {

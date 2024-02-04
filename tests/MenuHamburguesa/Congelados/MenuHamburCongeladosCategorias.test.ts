@@ -25,18 +25,49 @@ test('@Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu C
         await menuHamburCongeladosHamburguesas.clickCongeladosHamburguesas()
     })
 })
-test('@ABCD @Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Nuggets Rebozados', async ({menuHamburCongeladosNuggetsRebozados}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Nuggets Rebozados', async ({menuHamburCongeladosNuggetsRebozados}) => {
 
     await test.step('Click en Nuggets Rebozados', async () => {
         await menuHamburCongeladosNuggetsRebozados.clickCongeladosNuggetsRebozados()
     })
 })
-test('@ABCD @Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Papas', async ({menuHamburCongeladosPapas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Papas', async ({menuHamburCongeladosPapas}) => {
 
     await test.step('Click en Papas', async () => {
         await menuHamburCongeladosPapas.clickCongeladosPapas()
     })
 })
+test('@Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Verduras y Frutas', async ({menuHamburCongeladosVerdurasFrutas}) => {
+
+    await test.step('Click en Verduras y Frutas', async () => {
+        await menuHamburCongeladosVerdurasFrutas.clickCongeladosVerdurasFrutas()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Comidas y Panificados', async ({menuHamburCongeladosComidasPanificados}) => {
+
+    await test.step('Click en Comidas y Panificados', async () => {
+        await menuHamburCongeladosComidasPanificados.clickCongeladosComidasPanificados()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Helados y Postres', async ({menuHamburCongeladosHeladosPostres}) => {
+
+    await test.step('Click en Helados y Postres', async () => {
+        await menuHamburCongeladosHeladosPostres.clickCongeladosHeladosPostres()
+    })
+})
+test('@ABCD @Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Pollos', async ({menuHamburCongeladosPollos}) => {
+
+    await test.step('Click en Pollos', async () => {
+        await menuHamburCongeladosPollos.clickCongeladosPollos()
+    })
+})
+test('@ABCD @Regression @MenuHamburguesa (B2C-TC-334) Verificar que funciona el Menu Congelados: Pescados y Mariscos', async ({menuHamburCongeladosPescadosMariscos}) => {
+
+    await test.step('Click en Pescados y Mariscos', async () => {
+        await menuHamburCongeladosPescadosMariscos.clickCongeladosPescadosMariscos()
+    })
+})
+
 
 
 

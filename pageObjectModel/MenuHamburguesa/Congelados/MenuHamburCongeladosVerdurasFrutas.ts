@@ -4,7 +4,7 @@ import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/confi
 
 export class MenuHamburCongeladosVerdurasFrutas extends BasePage {
 
-    readonly Verduras_Frutas: Locator
+    readonly VERDURAS_FRUTAS: Locator
 
     private env: any
 
@@ -12,14 +12,14 @@ export class MenuHamburCongeladosVerdurasFrutas extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.Verduras_Frutas = this.page.locator('//a [@id="menu-item-category-limpieza-cocina"]');
+        this.VERDURAS_FRUTAS = this.page.locator('//a [@id="menu-item-category-limpieza-cocina"]');
     }
 
     async clickCongeladosVerdurasFrutas(): Promise<void> {
-        await this.click(this.Verduras_Frutas)
+        await this.click(this.VERDURAS_FRUTAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(5000)
     }
 
     async navigateToMenuHamburCongeladosVerdurasFrutas(): Promise<void> {
