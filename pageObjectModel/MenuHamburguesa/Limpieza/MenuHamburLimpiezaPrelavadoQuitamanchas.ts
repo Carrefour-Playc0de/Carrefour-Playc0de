@@ -2,9 +2,9 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburLimpiezaLimpiezaDeRopa extends BasePage {
+export class MenuHamburLimpiezaPrelavadoQuitamanchas extends BasePage {
 
-    readonly LIMPIEZA_DE_ROPA: Locator
+    readonly PRELAVADO_QUITAMANCHAS: Locator
 
     private env: any
 
@@ -12,18 +12,18 @@ export class MenuHamburLimpiezaLimpiezaDeRopa extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.LIMPIEZA_DE_ROPA = this.page.locator('menu-item-category-limpieza-ropa')
-        this.LIMPIEZA_DE_ROPA = this.page.locator("(//div[contains(text(),'Limpieza de la ropa')])[1]")
+        // this.PRELAVADO_QUITAMANCHAS = this.page.locator('//a [@id="menu-item-category-prelavado-quitamanchas"]')
+        this.PRELAVADO_QUITAMANCHAS = this.page.locator("(//div[contains(text(),'Prelavado y quitamanchas')])[1]")
     }
 
-    async clickLimpiezaLimpiezaDeRopa(): Promise<void> {
-        await this.click(this.LIMPIEZA_DE_ROPA)
+    async clickLimpiezaPrelavadoQuitamanchas(): Promise<void> {
+        await this.click(this.PRELAVADO_QUITAMANCHAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuHamburLimpiezaLimpiezaDeRopa(): Promise<void> {
-        await this.clickLimpiezaLimpiezaDeRopa()
+    async navigateToMenuHamburLimpiezaPrelavadoQuitamanchas(): Promise<void> {
+        await this.clickLimpiezaPrelavadoQuitamanchas()
     }
 }

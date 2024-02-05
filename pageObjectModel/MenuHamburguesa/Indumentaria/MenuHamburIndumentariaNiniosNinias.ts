@@ -2,28 +2,27 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburLimpiezaLimpiezaDeRopa extends BasePage {
+export class MenuHamburIndumentariaNiniosNinias extends BasePage {
 
-    readonly LIMPIEZA_DE_ROPA: Locator
+    readonly NINIOS_NINIAS: Locator
 
     private env: any
-
     constructor(page: Page, context: BrowserContext, environment: string) {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.LIMPIEZA_DE_ROPA = this.page.locator('menu-item-category-limpieza-ropa')
-        this.LIMPIEZA_DE_ROPA = this.page.locator("(//div[contains(text(),'Limpieza de la ropa')])[1]")
+        // this.NINIOS_NINIAS = this.page.locator('//a [@id="menu-item-category-indumentaria-ninos"]')
+        this.NINIOS_NINIAS = this.page.locator("(//div[contains(text(),'Niños y niñas')])[1]")
     }
 
-    async clickLimpiezaLimpiezaDeRopa(): Promise<void> {
-        await this.click(this.LIMPIEZA_DE_ROPA)
+    async clickIndumentariaNiniosNinias(): Promise<void> {
+        await this.click(this.NINIOS_NINIAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuHamburLimpiezaLimpiezaDeRopa(): Promise<void> {
-        await this.clickLimpiezaLimpiezaDeRopa()
+    async navigateToMenuHamburIndumentariaNiniosNinias(): Promise<void> {
+        await this.clickIndumentariaNiniosNinias()
     }
 }
