@@ -12,7 +12,7 @@ export class MenuHamburMascotasAlimentosSnacksPerros extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ALIMENTOS_SNACKS_PERROS = this.page.locator('')
+        this.ALIMENTOS_SNACKS_PERROS = this.page.locator('//a [@id="menu-item-category-alimentos-snacks-perros"]')
     }
 
     async clickMascotasAlimentosSnacksPerros(): Promise<void> {

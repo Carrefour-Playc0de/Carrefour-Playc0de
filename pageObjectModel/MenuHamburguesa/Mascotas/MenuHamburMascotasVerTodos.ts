@@ -4,7 +4,7 @@ import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/confi
 
 export class MenuHamburMascotasVerTodos extends BasePage {
 
-    readonly ALIMENTOS_VER_TODOS: Locator
+    readonly MASCOTAS_VER_TODOS: Locator
 
     private env: any
 
@@ -12,11 +12,11 @@ export class MenuHamburMascotasVerTodos extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ALIMENTOS_VER_TODOS = this.page.locator('//span[@class=\'vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu\']')
+        this.MASCOTAS_VER_TODOS = this.page.locator('(//span[@class=\'vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu\'])[1]')
     }
 
     async clickMascotasVerTodos(): Promise<void> {
-        await this.click(this.ALIMENTOS_VER_TODOS)
+        await this.click(this.MASCOTAS_VER_TODOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
     }

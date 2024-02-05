@@ -19,11 +19,9 @@ test('@Smoke @Regression (B2C-TC-1111) Verificar que funciona el Menu Limpieza: 
         await menuHamburLimpiezaVerTodo.clickLimpiezaVerTodo()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-335) Verificar que funciona el Menu Limpieza: Limpieza de la Ropa', async ({menuHamburLimpiezaLimpiezaDeRopa}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpieza de la Ropa', async ({menuHamburLimpiezaLimpiezaDeRopa}) => {
 
     await test.step('Click en Limpieza de la Ropa', async () => {
         await menuHamburLimpiezaLimpiezaDeRopa.clickLimpiezaLimpiezaDeRopa()
     })
 })
-
-// B2C-TC-1163

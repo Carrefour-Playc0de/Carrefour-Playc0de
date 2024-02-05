@@ -11,14 +11,13 @@ export class MenuHamburMascotas extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.MASCOTAS = this.page.locator('//div[contains(text(),\"Mascotas\")]')
+        this.MASCOTAS = this.page.locator('//div[contains(text(),"Mascotas")]')
     }
 
     async clickMascotas(): Promise<void> {
         await this.click(this.MASCOTAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburMascotas(): Promise<void> {

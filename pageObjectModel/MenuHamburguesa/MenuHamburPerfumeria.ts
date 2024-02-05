@@ -11,7 +11,7 @@ export class MenuHamburPerfumeria extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.PERFUMERIA = this.page.locator('//div[contains(text(),\"Perfumería\")]')
+        this.PERFUMERIA = this.page.locator("(//div[contains(text(),'Perfumería')])[1]")
     }
 
     async clickPerfumeria(): Promise<void> {

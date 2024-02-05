@@ -11,14 +11,13 @@ export class MenuHamburPerfumeriaCuidadoDelCabello extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.CUIDADO_CABELLO = this.page.locator('')
+        this.CUIDADO_CABELLO = this.page.locator('//a [@id="menu-item-category-cuidado-cabello"]')
     }
 
     async clickPerfumeriaCuidadoDelCabello(): Promise<void> {
         await this.click(this.CUIDADO_CABELLO)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaCuidadoDelCabello(): Promise<void> {
