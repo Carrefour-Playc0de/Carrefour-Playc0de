@@ -25,3 +25,5 @@ test('@Regression @MenuHamburguesa (B2C-TC-335) Verificar que funciona el Menu L
         await menuHamburLimpiezaLimpiezaDeRopa.clickLimpiezaLimpiezaDeRopa()
     })
 })
+
+// B2C-TC-1163

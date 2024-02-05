@@ -20,3 +20,4 @@ test('@Smoke @Regression (B2C-TC-1138) Verificar que funciona el Menu Indumentar
     })
 })
 
+// B2C-TC-1164
