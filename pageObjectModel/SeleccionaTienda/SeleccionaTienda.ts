@@ -12,7 +12,8 @@ export class SeleccionaTienda extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.CLOSE_X_TOAST_TUCHSR = this.page.locator('//div [@class="vtex-alert__close-icon pointer flex items-center pa3 white nr3 nv3"]')
+        // this.CLOSE_X_TOAST_TUCHSR = this.page.locator('//div [@class="vtex-alert__close-icon pointer flex items-center pa3 white nr3 nv3"]')
+        this.CLOSE_X_TOAST_TUCHSR = this.page.locator("(//*[name()='path'])[286]")
         this.SELECCIONA_TIENDA = this.page.locator("//p[contains(text(),'SELECCIONÁ TIENDA')]")
     }
 
