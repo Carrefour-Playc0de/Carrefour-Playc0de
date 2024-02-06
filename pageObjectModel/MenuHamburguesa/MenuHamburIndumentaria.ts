@@ -11,14 +11,13 @@ export class MenuHamburIndumentaria extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.INDUMENTARIA = this.page.locator('//div[contains(text(),\'Indumentaria\')]')
+        this.INDUMENTARIA = this.page.locator("//div[contains(text(),'Indumentaria')]")
     }
 
     async clickIndumentaria(): Promise<void> {
         await this.click(this.INDUMENTARIA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburIndumentaria(): Promise<void> {

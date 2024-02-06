@@ -18,7 +18,6 @@ export class MenuHamburElectroTecnologia extends BasePage {
         await this.click(this.ELECTRO_TECNOLOGIA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburElectroTecnologia(): Promise<void> {

@@ -11,14 +11,13 @@ export class MenuHamburIndumentariaVerTodos extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.INDUMENTARIA_VER_TODOS = this.page.locator('//span[@class=\'vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu\']')
+        this.INDUMENTARIA_VER_TODOS = this.page.locator("//span[@class='vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu']")
     }
 
     async clickIndumentariaVerTodos(): Promise<void> {
         await this.click(this.INDUMENTARIA_VER_TODOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburIndumentariaVerTodos(): Promise<void> {

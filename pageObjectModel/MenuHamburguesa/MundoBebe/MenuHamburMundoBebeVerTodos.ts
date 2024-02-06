@@ -12,7 +12,7 @@ export class MenuHamburMundoBebeVerTodos extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.MUNDO_BEBE_VER_TODOS = this.page.locator('//span[@class=\'vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu\']')
+        this.MUNDO_BEBE_VER_TODOS = this.page.locator("//span[@class='vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu']")
     }
 
     async clickMundoBebeVerTodos(): Promise<void> {

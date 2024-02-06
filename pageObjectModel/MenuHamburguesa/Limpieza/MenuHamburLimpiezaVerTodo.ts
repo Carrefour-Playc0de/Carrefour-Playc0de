@@ -12,7 +12,7 @@ export class MenuHamburLimpiezaVerTodo extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.LIMPIEZA_VER_TODO = this.page.locator('//span[@class=\'vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu\']')
+        this.LIMPIEZA_VER_TODO = this.page.locator("//span[@class='vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu']")
     }
 
     async clickLimpiezaVerTodo(): Promise<void> {

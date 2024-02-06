@@ -18,7 +18,6 @@ export class MenuHamburDesayunoMerienda extends BasePage {
         await this.click(this.DESAYUNO_MERIENDA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburDesayunoMerienda(): Promise<void> {

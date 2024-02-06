@@ -19,7 +19,6 @@ export class MenuHamburCongeladosPollos extends BasePage {
         await this.click(this.POLLOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(5000)
     }
 
     async navigateToMenuHamburCongeladosPollos(): Promise<void> {

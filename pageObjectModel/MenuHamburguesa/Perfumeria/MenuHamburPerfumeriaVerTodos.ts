@@ -11,14 +11,13 @@ export class MenuHamburPerfumeriaVerTodos extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.PERFUMERIA_VER_TODOS = this.page.locator('//span[@class=\'vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu\']')
+        this.PERFUMERIA_VER_TODOS = this.page.locator("//span[@class='vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu']")
     }
 
     async clickPerfumeriaVerTodos(): Promise<void> {
         await this.click(this.PERFUMERIA_VER_TODOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaVerTodos(): Promise<void> {

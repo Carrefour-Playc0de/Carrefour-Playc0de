@@ -12,7 +12,7 @@ export class MenuHamburMundoBebePaniales extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.PANIALES = this.page.locator('')
+        this.PANIALES = this.page.locator('//a [@id="menu-item-category-pañales"]')
     }
 
     async clickMundoBebePaniales(): Promise<void> {

@@ -12,7 +12,7 @@ export class MenuHamburMascotasVerTodos extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.MASCOTAS_VER_TODOS = this.page.locator('(//span[@class=\'vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu\'])[1]')
+        this.MASCOTAS_VER_TODOS = this.page.locator("//span[@class='vtex-store-link-0-x-label vtex-store-link-0-x-label--linkHeaderSubmenu']")
     }
 
     async clickMascotasVerTodos(): Promise<void> {

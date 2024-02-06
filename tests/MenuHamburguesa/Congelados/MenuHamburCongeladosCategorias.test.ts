@@ -55,13 +55,13 @@ test('@Regression @MenuHamburguesa (B2C-TC-1162) Verificar que funciona el Menu 
         await menuHamburCongeladosHeladosPostres.clickCongeladosHeladosPostres()
     })
 })
-test('@ABCD @Regression @MenuHamburguesa (B2C-TC-1162) Verificar que funciona el Menu Congelados: Pollos', async ({menuHamburCongeladosPollos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1162) Verificar que funciona el Menu Congelados: Pollos', async ({menuHamburCongeladosPollos}) => {
 
     await test.step('Click en Pollos', async () => {
         await menuHamburCongeladosPollos.clickCongeladosPollos()
     })
 })
-test('@ABCD @Regression @MenuHamburguesa (B2C-TC-1162) Verificar que funciona el Menu Congelados: Pescados y Mariscos', async ({menuHamburCongeladosPescadosMariscos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1162) Verificar que funciona el Menu Congelados: Pescados y Mariscos', async ({menuHamburCongeladosPescadosMariscos}) => {
 
     await test.step('Click en Pescados y Mariscos', async () => {
         await menuHamburCongeladosPescadosMariscos.clickCongeladosPescadosMariscos()
