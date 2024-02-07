@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaTraposPanios extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.TRAPOS_PANIOS = this.page.locator('//a [@id="menu-item-category-trapos-paños"]')
-        // Trapos y Panios
     }
 
     async clickLimpiezaTraposPanios(): Promise<void> {
         await this.click(this.TRAPOS_PANIOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaTraposPanios(): Promise<void> {

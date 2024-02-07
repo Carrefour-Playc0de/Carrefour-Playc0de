@@ -20,7 +20,7 @@ export class MenuHamburLimpiezaLimpiezaDeRopa extends BasePage {
         await this.click(this.LIMPIEZA_DE_ROPA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaLimpiezaDeRopa(): Promise<void> {

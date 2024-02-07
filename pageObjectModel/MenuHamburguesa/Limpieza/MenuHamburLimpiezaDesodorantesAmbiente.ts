@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaDesodorantesAmbiente extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.DESODORANTES_AMBIENTE = this.page.locator('//a [@id="menu-item-category-desodorante-ambiente"]')
-        // Desodorantes de Ambiente
     }
 
     async clickLimpiezaDesodorantesAmbiente(): Promise<void> {
         await this.click(this.DESODORANTES_AMBIENTE)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaDesodorantesAmbiente(): Promise<void> {

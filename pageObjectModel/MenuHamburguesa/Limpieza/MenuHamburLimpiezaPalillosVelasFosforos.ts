@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaPalillosVelasFosforos extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.PALILLOS_VELAS_FOSFOROS = this.page.locator('//a [@id="menu-item-category-palillos-velas-fosforos"]')
-        // Palillos Velas y Fosforos
     }
 
     async clickLimpiezaPalillosVelasFosforos(): Promise<void> {
         await this.click(this.PALILLOS_VELAS_FOSFOROS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaPalillosVelasFosforos(): Promise<void> {

@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaLimpiavidrios extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.LIMPIAVIDRIOS = this.page.locator('//a [@id="menu-item-category-limpiavidrios"]')
-        // Limpiavidrios
     }
 
     async clickLimpiezaLimpiavidrios(): Promise<void> {
         await this.click(this.LIMPIAVIDRIOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaLimpiavidrios(): Promise<void> {

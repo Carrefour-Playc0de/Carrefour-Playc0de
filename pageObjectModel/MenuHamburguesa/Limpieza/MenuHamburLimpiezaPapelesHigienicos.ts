@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaPapelesHigienicos extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.PAPELES_HIGIENICOS = this.page.locator('//a [@id="menu-item-category-papel-higienico"]')
-        // Papeles Higienicos
     }
 
     async clickLimpiezaPapelesHigienicos(): Promise<void> {
         await this.click(this.PAPELES_HIGIENICOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaPapelesHigienicos(): Promise<void> {

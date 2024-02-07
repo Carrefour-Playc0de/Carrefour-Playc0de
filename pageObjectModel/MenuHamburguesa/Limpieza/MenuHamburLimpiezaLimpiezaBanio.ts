@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaLimpiezaBanio extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.LIMPIEZA_BANIO = this.page.locator('//a [@id="menu-item-category-limpieza-baño"]')
-        // Limpieza de Banio
     }
 
     async clickLimpiezaLimpiezaBanio(): Promise<void> {
         await this.click(this.LIMPIEZA_BANIO)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaLimpiezaBanio(): Promise<void> {

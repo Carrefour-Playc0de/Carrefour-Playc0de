@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaAntihumedad extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.ANTIHUMEDAD = this.page.locator('//a [@id="menu-item-category-antihumedad"]')
-        // Antihumedad
     }
 
     async clickLimpiezaAntihumedad(): Promise<void> {
         await this.click(this.ANTIHUMEDAD)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaAntihumedad(): Promise<void> {

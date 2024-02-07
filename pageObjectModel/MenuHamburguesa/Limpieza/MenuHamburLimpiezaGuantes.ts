@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaGuantes extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.GUANTES = this.page.locator('//a [@id="menu-item-category-guantes"]')
-        // Guantes
     }
 
     async clickLimpiezaGuantes(): Promise<void> {
         await this.click(this.GUANTES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaGuantes(): Promise<void> {

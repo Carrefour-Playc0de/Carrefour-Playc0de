@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaAutobrillosCerasPisos extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.AUTOBRILLOS_CERAS_PISOS = this.page.locator('//a [@id="menu-item-category-autobrillos-ceras-piso"]')
-        // Autobrillos y Ceras para Pisos
     }
 
     async clickLimpiezaAutobrillosCerasPisos(): Promise<void> {
         await this.click(this.AUTOBRILLOS_CERAS_PISOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaAutobrillosCerasPisos(): Promise<void> {

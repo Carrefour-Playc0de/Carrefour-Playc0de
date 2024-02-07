@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaLavandinas extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.LAVANDINAS = this.page.locator('//a [@id="menu-item-category-lavandinas"]')
-        // Lavandinas
     }
 
     async clickLimpiezaLavandinas(): Promise<void> {
         await this.click(this.LAVANDINAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaLavandinas(): Promise<void> {

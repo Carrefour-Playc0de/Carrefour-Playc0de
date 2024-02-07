@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaParaLavavajillas extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.PARA_LAVAVAJILLAS = this.page.locator('//a [@id="menu-item-category-para-lavavajillas"]')
-        // Para el Lavavajillas
     }
 
     async clickLimpiezaParaLavavajillas(): Promise<void> {
         await this.click(this.PARA_LAVAVAJILLAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaParaLavavajillas(): Promise<void> {

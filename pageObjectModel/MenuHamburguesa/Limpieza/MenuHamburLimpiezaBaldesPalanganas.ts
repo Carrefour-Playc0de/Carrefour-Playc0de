@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaBaldesPalanganas extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.BALDES_PALANGANAS = this.page.locator('//a [@id="menu-item-category-baldes-palanganas"]')
-        // Baldes y Palanganas
     }
 
     async clickLimpiezaBaldesPalanganas(): Promise<void> {
         await this.click(this.BALDES_PALANGANAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaBaldesPalanganas(): Promise<void> {

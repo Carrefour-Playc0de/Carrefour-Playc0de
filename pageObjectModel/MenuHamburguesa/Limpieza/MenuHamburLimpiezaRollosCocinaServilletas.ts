@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaRollosCocinaServilletas extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.ROLLOS_COCINA_SERVILLETAS = this.page.locator('//a [@id="menu-item-category-lecrollos-cocina-servilletashe"]')
-        // Rollos de Cocina y Servilletas
     }
 
     async clickLimpiezaRollosCocinaServilletas(): Promise<void> {
         await this.click(this.ROLLOS_COCINA_SERVILLETAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaRollosCocinaServilletas(): Promise<void> {

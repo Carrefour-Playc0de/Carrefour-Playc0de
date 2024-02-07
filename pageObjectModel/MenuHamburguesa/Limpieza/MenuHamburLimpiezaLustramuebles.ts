@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaLustramuebles extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.LUSTRAMUEBLES = this.page.locator('//a [@id="menu-item-category-lustramuebles"]')
-        // Lustramuebles
     }
 
     async clickLimpiezaLustramuebles(): Promise<void> {
         await this.click(this.LUSTRAMUEBLES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaLustramuebles(): Promise<void> {

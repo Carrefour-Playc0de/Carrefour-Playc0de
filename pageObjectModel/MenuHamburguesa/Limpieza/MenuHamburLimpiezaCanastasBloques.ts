@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaCanastasBloques extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.CANASTAS_BLOQUES = this.page.locator('//a [@id="menu-item-category-canastas-bloques"]')
-        // Canastas y Bloques
     }
 
     async clickLimpiezaCanastasBloques(): Promise<void> {
         await this.click(this.CANASTAS_BLOQUES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaCanastasBloques(): Promise<void> {

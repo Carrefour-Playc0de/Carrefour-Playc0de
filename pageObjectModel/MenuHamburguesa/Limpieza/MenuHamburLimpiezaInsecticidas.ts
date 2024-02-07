@@ -13,14 +13,13 @@ export class MenuHamburLimpiezaInsecticidas extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.INSECTICIDAS = this.page.locator('//a [@id="menu-item-category-insecticidas"]')
-        // Insecticidas
     }
 
     async clickLimpiezaInsecticidas(): Promise<void> {
         await this.click(this.INSECTICIDAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaInsecticidas(): Promise<void> {
