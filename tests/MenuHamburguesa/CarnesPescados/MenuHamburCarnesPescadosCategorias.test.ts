@@ -1,6 +1,5 @@
 import test from '../../../config/testManager'
 
-// We can use steps like this to reproduce Cucumber formatting
 test.beforeEach(async ({ mainPageAndAcceptCookies, menuHamburguesa, menuHamburCarnesPescados}) => {
     await test.step(`Navigate to Carrefour page and Accept Cookies`, async () => {
         await mainPageAndAcceptCookies.navigateToMainPageAndAcceptCookies()

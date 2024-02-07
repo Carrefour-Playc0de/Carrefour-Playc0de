@@ -12,8 +12,7 @@ export class MenuHamburLimpiezaPerfumantesTela extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.PERFUMANTES_TELA = this.page.locator('//a [@id="menu-item-category-perfumantes-tela"]')
-        this.PERFUMANTES_TELA = this.page.locator("(//div[contains(text(),'Perfumantes para tela')])[1]")
+        this.PERFUMANTES_TELA = this.page.locator('//a [@id="menu-item-category-perfumantes-tela"]')
     }
 
     async clickLimpiezaPerfumantesTela(): Promise<void> {

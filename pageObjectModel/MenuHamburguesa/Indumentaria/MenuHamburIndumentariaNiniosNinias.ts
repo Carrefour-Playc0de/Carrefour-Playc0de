@@ -11,15 +11,13 @@ export class MenuHamburIndumentariaNiniosNinias extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.NINIOS_NINIAS = this.page.locator('//a [@id="menu-item-category-indumentaria-ninos"]')
-        this.NINIOS_NINIAS = this.page.locator("(//div[contains(text(),'Niños y niñas')])[1]")
+        this.NINIOS_NINIAS = this.page.locator('//a [@id="menu-item-category-indumentaria-ninos"]')
     }
 
     async clickIndumentariaNiniosNinias(): Promise<void> {
         await this.click(this.NINIOS_NINIAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburIndumentariaNiniosNinias(): Promise<void> {

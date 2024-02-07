@@ -12,8 +12,7 @@ export class MenuHamburLimpiezaAprestos extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.APRESTOS = this.page.locator('//a [@id="menu-item-category-aprestos"]')
-        this.APRESTOS = this.page.locator("(//div[contains(text(),'Aprestos')])[1]")
+        this.APRESTOS = this.page.locator('//a [@id="menu-item-category-aprestos"]')
     }
 
     async clickLimpiezaAprestos(): Promise<void> {

@@ -11,15 +11,13 @@ export class MenuHamburIndumentariaBebes extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.BEBE = this.page.locator('//a [@id="menu-item-category-indumentaria-bebes"]')
-        this.BEBE = this.page.locator("(//div[contains(text(),'Bebés')])[1]")
+        this.BEBE = this.page.locator('//a [@id="menu-item-category-indumentaria-bebes"]')
     }
 
     async clickIndumentariaBebes(): Promise<void> {
         await this.click(this.BEBE)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburIndumentariaBebes(): Promise<void> {

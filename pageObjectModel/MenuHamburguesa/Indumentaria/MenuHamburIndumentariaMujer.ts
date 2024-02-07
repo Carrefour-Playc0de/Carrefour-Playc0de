@@ -11,15 +11,13 @@ export class MenuHamburIndumentariaMujer extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.MUJER = this.page.locator('//a [@id="menu-item-category-indumentaria-adultos-mujer"]')
-        this.MUJER = this.page.locator("(//div[contains(text(),'Mujer')])[1]")
+        this.MUJER = this.page.locator('//a [@id="menu-item-category-indumentaria-adultos-mujer"]')
     }
 
     async clickIndumentariaMujer(): Promise<void> {
         await this.click(this.MUJER)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburIndumentariaMujer(): Promise<void> {

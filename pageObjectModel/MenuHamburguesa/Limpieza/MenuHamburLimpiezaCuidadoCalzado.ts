@@ -12,8 +12,7 @@ export class MenuHamburLimpiezaCuidadoCalzado extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.CUIDADO_CALZADO = this.page.locator('//a [@id="menu-item-category-cuidado-calzado"]')
-        this.CUIDADO_CALZADO = this.page.locator("(//div[contains(text(),'Cuidado del calzado')])[1]")
+        this.CUIDADO_CALZADO = this.page.locator('//a [@id="menu-item-category-cuidado-calzado"]')
     }
 
     async clickLimpiezaCuidadoCalzado(): Promise<void> {

@@ -2,9 +2,9 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburLimpiezaPrelavadoQuitamanchas extends BasePage {
+export class MenuHamburLimpiezaAutobrillosCerasPisos extends BasePage {
 
-    readonly PRELAVADO_QUITAMANCHAS: Locator
+    readonly AUTOBRILLOS_CERAS_PISOS: Locator
 
     private env: any
 
@@ -12,17 +12,18 @@ export class MenuHamburLimpiezaPrelavadoQuitamanchas extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.PRELAVADO_QUITAMANCHAS = this.page.locator('//a [@id="menu-item-category-prelavado-quitamanchas"]')
+        this.AUTOBRILLOS_CERAS_PISOS = this.page.locator('//a [@id="menu-item-category-autobrillos-ceras-piso"]')
+        // Autobrillos y Ceras para Pisos
     }
 
-    async clickLimpiezaPrelavadoQuitamanchas(): Promise<void> {
-        await this.click(this.PRELAVADO_QUITAMANCHAS)
+    async clickLimpiezaAutobrillosCerasPisos(): Promise<void> {
+        await this.click(this.AUTOBRILLOS_CERAS_PISOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuHamburLimpiezaPrelavadoQuitamanchas(): Promise<void> {
-        await this.clickLimpiezaPrelavadoQuitamanchas()
+    async navigateToMenuHamburLimpiezaAutobrillosCerasPisos(): Promise<void> {
+        await this.clickLimpiezaAutobrillosCerasPisos()
     }
 }

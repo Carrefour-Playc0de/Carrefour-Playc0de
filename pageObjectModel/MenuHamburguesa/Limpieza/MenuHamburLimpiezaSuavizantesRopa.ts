@@ -12,8 +12,7 @@ export class MenuHamburLimpiezaSuavizantesRopa extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        // this.SUAVIZANTES_ROPA = this.page.locator('//a [@id="menu-item-category-suavizantes-ropa"]')
-        this.SUAVIZANTES_ROPA = this.page.locator("(//div[contains(text(),'Suavizantes para la ropa')])[1]")
+        this.SUAVIZANTES_ROPA = this.page.locator('//a [@id="menu-item-category-suavizantes-ropa"]')
     }
 
     async clickLimpiezaSuavizantesRopa(): Promise<void> {

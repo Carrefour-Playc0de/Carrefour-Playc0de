@@ -1090,6 +1090,37 @@ import { MenuHamburCongeladosPollos } from '../pageObjectModel/MenuHamburguesa/C
 import {
     MenuHamburCongeladosPescadosMariscos
 } from '../pageObjectModel/MenuHamburguesa/Congelados/MenuHamburCongeladosPescadosMariscos'
+import {
+    MenuHamburIndumentariaAdultos
+} from '../pageObjectModel/MenuHamburguesa/Indumentaria/MenuHamburIndumentariaAdultos'
+import {
+    MenuHamburIndumentariaHombre
+} from '../pageObjectModel/MenuHamburguesa/Indumentaria/MenuHamburIndumentariaHombre'
+import {
+    MenuHamburIndumentariaMujer
+} from '../pageObjectModel/MenuHamburguesa/Indumentaria/MenuHamburIndumentariaMujer'
+import {
+    MenuHamburIndumentariaBebes
+} from '../pageObjectModel/MenuHamburguesa/Indumentaria/MenuHamburIndumentariaBebes'
+import {
+    MenuHamburIndumentariaNiniosNinias
+} from '../pageObjectModel/MenuHamburguesa/Indumentaria/MenuHamburIndumentariaNiniosNinias'
+import {
+    MenuHamburLimpiezaJabonesParaRopa
+} from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaJabonesParaRopa'
+import {
+    MenuHamburLimpiezaPrelavadoQuitamanchas
+} from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaPrelavadoQuitamanchas'
+import {
+    MenuHamburLimpiezaSuavizantesRopa
+} from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaSuavizantesRopa'
+import { MenuHamburLimpiezaAprestos } from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaAprestos'
+import {
+    MenuHamburLimpiezaPerfumantesTela
+} from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaPerfumantesTela'
+import {
+    MenuHamburLimpiezaCuidadoCalzado
+} from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaCuidadoCalzado'
 
 
 
@@ -1522,6 +1553,17 @@ const test = baseTest.extend<{
     menuHamburCongeladosHeladosPostres: MenuHamburCongeladosHeladosPostres
     menuHamburCongeladosPollos: MenuHamburCongeladosPollos
     menuHamburCongeladosPescadosMariscos: MenuHamburCongeladosPescadosMariscos
+    menuHamburIndumentariaAdultos: MenuHamburIndumentariaAdultos
+    menuHamburIndumentariaHombre: MenuHamburIndumentariaHombre
+    menuHamburIndumentariaMujer: MenuHamburIndumentariaMujer
+    menuHamburIndumentariaBebes: MenuHamburIndumentariaBebes
+    menuHamburIndumentariaNiniosNinias: MenuHamburIndumentariaNiniosNinias
+    menuHamburLimpiezaJabonesParaRopa: MenuHamburLimpiezaJabonesParaRopa
+    menuHamburLimpiezaPrelavadoQuitamanchas: MenuHamburLimpiezaPrelavadoQuitamanchas
+    menuHamburLimpiezaSuavizantesRopa: MenuHamburLimpiezaSuavizantesRopa
+    menuHamburLimpiezaAprestos: MenuHamburLimpiezaAprestos
+    menuHamburLimpiezaPerfumantesTela: MenuHamburLimpiezaPerfumantesTela
+    menuHamburLimpiezaCuidadoCalzado: MenuHamburLimpiezaCuidadoCalzado
 
 
 }>({
@@ -1541,6 +1583,33 @@ const test = baseTest.extend<{
     urlCarrefour: async ({ page, context }, use) => {
         await use(new UrlCarrefour(page, context, environment))
     },
+
+
+    menuHamburLimpiezaJabonesParaRopa: async ({ page, context }, use) => {
+        await use(new MenuHamburLimpiezaJabonesParaRopa(page, context, environment))
+    },
+    menuHamburLimpiezaPrelavadoQuitamanchas: async ({ page, context }, use) => {
+        await use(new MenuHamburLimpiezaPrelavadoQuitamanchas(page, context, environment))
+    },
+    menuHamburLimpiezaSuavizantesRopa: async ({ page, context }, use) => {
+        await use(new MenuHamburLimpiezaSuavizantesRopa(page, context, environment))
+    },
+    menuHamburLimpiezaAprestos: async ({ page, context }, use) => {
+        await use(new MenuHamburLimpiezaAprestos(page, context, environment))
+    },
+    menuHamburLimpiezaPerfumantesTela: async ({ page, context }, use) => {
+        await use(new MenuHamburLimpiezaPerfumantesTela(page, context, environment))
+    },
+    menuHamburLimpiezaCuidadoCalzado: async ({ page, context }, use) => {
+        await use(new MenuHamburLimpiezaCuidadoCalzado(page, context, environment))
+    },
+
+
+
+
+
+
+
 
 
     // MENU HAMBURGUESA - CONGELADOS
@@ -1728,6 +1797,21 @@ const test = baseTest.extend<{
     },
     menuHamburLimpiezaLimpiezaDeRopa: async ({ page, context }, use) => {
         await use(new MenuHamburLimpiezaLimpiezaDeRopa(page, context, environment))
+    },
+    menuHamburIndumentariaAdultos: async ({ page, context }, use) => {
+        await use(new MenuHamburIndumentariaAdultos(page, context, environment))
+    },
+    menuHamburIndumentariaHombre: async ({ page, context }, use) => {
+        await use(new MenuHamburIndumentariaHombre(page, context, environment))
+    },
+    menuHamburIndumentariaMujer: async ({ page, context }, use) => {
+        await use(new MenuHamburIndumentariaMujer(page, context, environment))
+    },
+    menuHamburIndumentariaBebes: async ({ page, context }, use) => {
+        await use(new MenuHamburIndumentariaBebes(page, context, environment))
+    },
+    menuHamburIndumentariaNiniosNinias: async ({ page, context }, use) => {
+        await use(new MenuHamburIndumentariaNiniosNinias(page, context, environment))
     },
 
 

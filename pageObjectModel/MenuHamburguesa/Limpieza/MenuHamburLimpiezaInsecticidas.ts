@@ -2,25 +2,28 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburIndumentariaAdultos extends BasePage {
+export class MenuHamburLimpiezaInsecticidas extends BasePage {
 
-    readonly ADULTOS: Locator
+    readonly INSECTICIDAS: Locator
 
     private env: any
+
     constructor(page: Page, context: BrowserContext, environment: string) {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ADULTOS = this.page.locator('//a [@id="menu-item-category-indumentaria-adultos"]')
+        this.INSECTICIDAS = this.page.locator('//a [@id="menu-item-category-insecticidas"]')
+        // Insecticidas
     }
 
-    async clickIndumentariaAdultos(): Promise<void> {
-        await this.click(this.ADULTOS)
+    async clickLimpiezaInsecticidas(): Promise<void> {
+        await this.click(this.INSECTICIDAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
+        await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuHamburIndumentariaAdultos(): Promise<void> {
-        await this.clickIndumentariaAdultos()
+    async navigateToMenuHamburLimpiezaInsecticidas(): Promise<void> {
+        await this.clickLimpiezaInsecticidas()
     }
 }

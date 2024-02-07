@@ -2,9 +2,9 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburLimpiezaPrelavadoQuitamanchas extends BasePage {
+export class MenuHamburLimpiezaPalillosVelasFosforos extends BasePage {
 
-    readonly PRELAVADO_QUITAMANCHAS: Locator
+    readonly PALILLOS_VELAS_FOSFOROS: Locator
 
     private env: any
 
@@ -12,17 +12,18 @@ export class MenuHamburLimpiezaPrelavadoQuitamanchas extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.PRELAVADO_QUITAMANCHAS = this.page.locator('//a [@id="menu-item-category-prelavado-quitamanchas"]')
+        this.PALILLOS_VELAS_FOSFOROS = this.page.locator('//a [@id="menu-item-category-palillos-velas-fosforos"]')
+        // Palillos Velas y Fosforos
     }
 
-    async clickLimpiezaPrelavadoQuitamanchas(): Promise<void> {
-        await this.click(this.PRELAVADO_QUITAMANCHAS)
+    async clickLimpiezaPalillosVelasFosforos(): Promise<void> {
+        await this.click(this.PALILLOS_VELAS_FOSFOROS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuHamburLimpiezaPrelavadoQuitamanchas(): Promise<void> {
-        await this.clickLimpiezaPrelavadoQuitamanchas()
+    async navigateToMenuHamburLimpiezaPalillosVelasFosforos(): Promise<void> {
+        await this.clickLimpiezaPalillosVelasFosforos()
     }
 }

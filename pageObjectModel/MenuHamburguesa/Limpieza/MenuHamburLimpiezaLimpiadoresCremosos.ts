@@ -2,25 +2,28 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburIndumentariaAdultos extends BasePage {
+export class MenuHamburLimpiezaLimpiadoresCremosos extends BasePage {
 
-    readonly ADULTOS: Locator
+    readonly LIMPIADORES_CREMOSOS: Locator
 
     private env: any
+
     constructor(page: Page, context: BrowserContext, environment: string) {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ADULTOS = this.page.locator('//a [@id="menu-item-category-indumentaria-adultos"]')
+        this.LIMPIADORES_CREMOSOS = this.page.locator('//a [@id="menu-item-category-limpiadores-cremosos"]')
+        // Limpiadores Cremosos
     }
 
-    async clickIndumentariaAdultos(): Promise<void> {
-        await this.click(this.ADULTOS)
+    async clickLimpiezaLimpiadoresCremosos(): Promise<void> {
+        await this.click(this.LIMPIADORES_CREMOSOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
+        await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuHamburIndumentariaAdultos(): Promise<void> {
-        await this.clickIndumentariaAdultos()
+    async navigateToMenuHamburLimpiezaLimpiadoresCremosos(): Promise<void> {
+        await this.clickLimpiezaLimpiadoresCremosos()
     }
 }
