@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaBaldesPalanganas extends BasePage {
         await this.click(this.BALDES_PALANGANAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaBaldesPalanganas(): Promise<void> {

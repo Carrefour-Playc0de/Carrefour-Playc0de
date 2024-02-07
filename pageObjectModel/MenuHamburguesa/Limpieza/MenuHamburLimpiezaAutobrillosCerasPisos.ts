@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaAutobrillosCerasPisos extends BasePage {
         await this.click(this.AUTOBRILLOS_CERAS_PISOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaAutobrillosCerasPisos(): Promise<void> {

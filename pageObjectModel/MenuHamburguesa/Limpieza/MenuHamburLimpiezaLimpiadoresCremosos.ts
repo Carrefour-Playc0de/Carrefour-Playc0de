@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaLimpiadoresCremosos extends BasePage {
         await this.click(this.LIMPIADORES_CREMOSOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaLimpiadoresCremosos(): Promise<void> {

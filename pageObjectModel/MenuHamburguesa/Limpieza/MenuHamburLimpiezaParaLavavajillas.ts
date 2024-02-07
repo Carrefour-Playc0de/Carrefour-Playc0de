@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaParaLavavajillas extends BasePage {
         await this.click(this.PARA_LAVAVAJILLAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaParaLavavajillas(): Promise<void> {

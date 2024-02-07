@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaAntihumedad extends BasePage {
         await this.click(this.ANTIHUMEDAD)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaAntihumedad(): Promise<void> {

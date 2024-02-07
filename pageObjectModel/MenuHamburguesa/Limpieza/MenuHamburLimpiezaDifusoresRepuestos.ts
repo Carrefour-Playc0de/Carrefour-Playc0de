@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaDifusoresRepuestos extends BasePage {
         await this.click(this.DIFUSORES_REPUESTOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaDifusoresRepuestos(): Promise<void> {

@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaRollosCocinaServilletas extends BasePage {
         await this.click(this.ROLLOS_COCINA_SERVILLETAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaRollosCocinaServilletas(): Promise<void> {

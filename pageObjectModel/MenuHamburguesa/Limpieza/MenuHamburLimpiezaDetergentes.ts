@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaDetergentes extends BasePage {
         await this.click(this.DETERGENTES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaDetergentes(): Promise<void> {

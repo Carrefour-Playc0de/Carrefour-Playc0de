@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaCanastasBloques extends BasePage {
         await this.click(this.CANASTAS_BLOQUES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaCanastasBloques(): Promise<void> {

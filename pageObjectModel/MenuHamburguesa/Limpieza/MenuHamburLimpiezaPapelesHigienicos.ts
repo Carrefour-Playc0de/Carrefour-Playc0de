@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaPapelesHigienicos extends BasePage {
         await this.click(this.PAPELES_HIGIENICOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaPapelesHigienicos(): Promise<void> {

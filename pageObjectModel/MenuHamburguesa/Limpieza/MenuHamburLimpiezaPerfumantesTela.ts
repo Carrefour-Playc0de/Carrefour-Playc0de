@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaPerfumantesTela extends BasePage {
         await this.click(this.PERFUMANTES_TELA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaPerfumantesTela(): Promise<void> {

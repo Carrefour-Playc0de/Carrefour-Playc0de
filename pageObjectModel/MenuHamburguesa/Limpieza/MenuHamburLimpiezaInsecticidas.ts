@@ -19,7 +19,6 @@ export class MenuHamburLimpiezaInsecticidas extends BasePage {
         await this.click(this.INSECTICIDAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(7000)
     }
 
     async navigateToMenuHamburLimpiezaInsecticidas(): Promise<void> {
