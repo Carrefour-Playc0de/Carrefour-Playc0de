@@ -12,14 +12,13 @@ export class MenuHamburMundoBebeLechesInfantiles extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.LECHES_INFANTILES = this.page.locator('')
+        this.LECHES_INFANTILES = this.page.locator('//a [@id="menu-item-category-leche-infantiles"]')
     }
 
     async clickMundoBebeLechesInfantiles(): Promise<void> {
         await this.click(this.LECHES_INFANTILES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburMundoBebeLechesInfantiles(): Promise<void> {

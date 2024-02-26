@@ -2,9 +2,9 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburMundoBebeAceitesCremasLociones extends BasePage {
+export class MenuHamburMundoBebeCerealesPapillas extends BasePage {
 
-    readonly ACEITES_CREMAS_LOCIONES: Locator
+    readonly CEREALES_PAPILLAS: Locator
 
     private env: any
 
@@ -12,16 +12,16 @@ export class MenuHamburMundoBebeAceitesCremasLociones extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ACEITES_CREMAS_LOCIONES = this.page.locator('//a [@id="menu-item-category-aceites-cremas-lociones"]')
+        this.CEREALES_PAPILLAS = this.page.locator('//a [@id="menu-item-category-cereales-papillas"]')
     }
 
-    async clickMundoBebeAceitesCremasLociones(): Promise<void> {
-        await this.click(this.ACEITES_CREMAS_LOCIONES)
+    async clickMundoBebeCerealesPapillas(): Promise<void> {
+        await this.click(this.CEREALES_PAPILLAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
     }
 
-    async navigateToMenuHamburMundoBebeAceitesCremasLociones(): Promise<void> {
-        await this.clickMundoBebeAceitesCremasLociones()
+    async navigateToMenuHamburMundoBebeCerealesPapillas(): Promise<void> {
+        await this.clickMundoBebeCerealesPapillas()
     }
 }

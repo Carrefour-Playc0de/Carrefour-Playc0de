@@ -1235,6 +1235,24 @@ import {
 import {
     MenuHamburMundoBebeAlimentoBebe
 } from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeAlimentoBebe'
+import {
+    MenuHamburMundoBebeLechesInfantiles
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeLechesInfantiles'
+import {
+    MenuHamburMundoBebeCerealesPapillas
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeCerealesPapillas'
+import {
+    MenuHamburMundoBebeCuidadoMaternal
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeCuidadoMaternal'
+import {
+    MenuHamburMundoBebeChupetesMamaderasAccesorios
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeChupetesMamaderasAccesorios'
+import {
+    MenuHamburMundoBebePelelasBanieras
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebePelelasBanieras'
+import {
+    MenuHamburMundoBebeCochecitosButacas
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeCochecitosButacas'
 
 
 
@@ -1720,50 +1738,18 @@ const test = baseTest.extend<{
     menuHamburMundoBebeColonias: MenuHamburMundoBebeColonias
     menuHamburMundoBebeAceitesCremasLociones: MenuHamburMundoBebeAceitesCremasLociones
     menuHamburMundoBebeAlimentoBebe: MenuHamburMundoBebeAlimentoBebe
+    menuHamburMundoBebeLechesInfantiles: MenuHamburMundoBebeLechesInfantiles
+    menuHamburMundoBebeCerealesPapillas: MenuHamburMundoBebeCerealesPapillas
+    menuHamburMundoBebeCuidadoMaternal: MenuHamburMundoBebeCuidadoMaternal
+    menuHamburMundoBebeChupetesMamaderasAccesorios: MenuHamburMundoBebeChupetesMamaderasAccesorios
+    menuHamburMundoBebePelelasBanieras: MenuHamburMundoBebePelelasBanieras
+    menuHamburMundoBebeCochecitosButacas: MenuHamburMundoBebeCochecitosButacas
 
 }>({
     loginPage: async ({ page, context }, use) => {
         const loginPage = new LoginPage(page, context, environment)
         await use(loginPage)
     },
-
-
-    // MENU HAMBURGUESA - MUNDO BEBE
-    menuHamburMundoBebeVerTodos: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeVerTodos(page, context, environment))
-    },
-    menuHamburMundoBebePaniales: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebePaniales(page, context, environment))
-    },
-    menuHamburMundoBebeToallitasHumedas: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeToallitasHumedas(page, context, environment))
-    },
-    menuHamburMundoBebeParaBanio: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeParaBanio(page, context, environment))
-    },
-    menuHamburMundoBebeShampoosAcondicionadores: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeShampoosAcondicionadores(page, context, environment))
-    },
-    menuHamburMundoBebeJabones: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeJabones(page, context, environment))
-    },
-    menuHamburMundoBebeDespuesBanio: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeDespuesBanio(page, context, environment))
-    },
-    menuHamburMundoBebeOleoCalcareoTalco: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeOleoCalcareoTalco(page, context, environment))
-    },
-    menuHamburMundoBebeColonias: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeColonias(page, context, environment))
-    },
-    menuHamburMundoBebeAceitesCremasLociones: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeAceitesCremasLociones(page, context, environment))
-    },
-    menuHamburMundoBebeAlimentoBebe: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeAlimentoBebe(page, context, environment))
-    },
-
-
 
 
 
@@ -1934,10 +1920,60 @@ const test = baseTest.extend<{
     },
 
 
+    // MENU HAMBURGUESA - MUNDO BEBE
+    menuHamburMundoBebeVerTodos: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeVerTodos(page, context, environment))
+    },
+    menuHamburMundoBebePaniales: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebePaniales(page, context, environment))
+    },
+    menuHamburMundoBebeToallitasHumedas: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeToallitasHumedas(page, context, environment))
+    },
+    menuHamburMundoBebeParaBanio: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeParaBanio(page, context, environment))
+    },
+    menuHamburMundoBebeShampoosAcondicionadores: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeShampoosAcondicionadores(page, context, environment))
+    },
+    menuHamburMundoBebeJabones: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeJabones(page, context, environment))
+    },
+    menuHamburMundoBebeDespuesBanio: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeDespuesBanio(page, context, environment))
+    },
+    menuHamburMundoBebeOleoCalcareoTalco: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeOleoCalcareoTalco(page, context, environment))
+    },
+    menuHamburMundoBebeColonias: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeColonias(page, context, environment))
+    },
+    menuHamburMundoBebeAceitesCremasLociones: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeAceitesCremasLociones(page, context, environment))
+    },
+    menuHamburMundoBebeAlimentoBebe: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeAlimentoBebe(page, context, environment))
+    },
+    menuHamburMundoBebeLechesInfantiles: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeLechesInfantiles(page, context, environment))
+    },
+    menuHamburMundoBebeCerealesPapillas: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeCerealesPapillas(page, context, environment))
+    },
+    menuHamburMundoBebeCuidadoMaternal: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeCuidadoMaternal(page, context, environment))
+    },
+    menuHamburMundoBebeChupetesMamaderasAccesorios: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeChupetesMamaderasAccesorios(page, context, environment))
+    },
+    menuHamburMundoBebePelelasBanieras: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebePelelasBanieras(page, context, environment))
+    },
+    menuHamburMundoBebeCochecitosButacas: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeCochecitosButacas(page, context, environment))
+    },
 
-
-
-
+    
     // MENU HAMBURGUESA - INDUMENTARIAS
     menuHamburIndumentariaVerTodos: async ({ page, context }, use) => {
         await use(new MenuHamburIndumentariaVerTodos(page, context, environment))

@@ -19,7 +19,6 @@ export class MenuHamburMundoBebeOleoCalcareoTalco extends BasePage {
         await this.click(this.OLEO_CALCAREO_TALCO)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburMundoBebeOleoCalcareoTalco(): Promise<void> {

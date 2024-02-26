@@ -19,7 +19,6 @@ export class MenuHamburMundoBebeJabones extends BasePage {
         await this.click(this.JABONES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburMundoBebeJabones(): Promise<void> {

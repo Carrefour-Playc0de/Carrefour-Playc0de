@@ -19,7 +19,6 @@ export class MenuHamburMundoBebeDespuesBanio extends BasePage {
         await this.click(this.DESPUES_BANIO)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburMundoBebeDespuesBanio(): Promise<void> {

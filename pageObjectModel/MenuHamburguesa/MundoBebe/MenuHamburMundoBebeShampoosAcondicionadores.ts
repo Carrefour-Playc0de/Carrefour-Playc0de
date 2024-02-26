@@ -19,7 +19,6 @@ export class MenuHamburMundoBebeShampoosAcondicionadores extends BasePage {
         await this.click(this.SHAMPOOS_ACONDICIONADORES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburMundoBebeShampoosAcondicionadores(): Promise<void> {

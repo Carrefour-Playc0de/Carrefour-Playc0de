@@ -2,9 +2,9 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburMundoBebeAceitesCremasLociones extends BasePage {
+export class MenuHamburMundoBebeCochecitosButacas extends BasePage {
 
-    readonly ACEITES_CREMAS_LOCIONES: Locator
+    readonly COCHECITOS_BUTACAS: Locator
 
     private env: any
 
@@ -12,16 +12,16 @@ export class MenuHamburMundoBebeAceitesCremasLociones extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ACEITES_CREMAS_LOCIONES = this.page.locator('//a [@id="menu-item-category-aceites-cremas-lociones"]')
+        this.COCHECITOS_BUTACAS = this.page.locator('//a [@id="menu-item-category-cochecitos-butacas"]')
     }
 
-    async clickMundoBebeAceitesCremasLociones(): Promise<void> {
-        await this.click(this.ACEITES_CREMAS_LOCIONES)
+    async clickMundoBebeCochecitosButacas(): Promise<void> {
+        await this.click(this.COCHECITOS_BUTACAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
     }
 
-    async navigateToMenuHamburMundoBebeAceitesCremasLociones(): Promise<void> {
-        await this.clickMundoBebeAceitesCremasLociones()
+    async navigateToMenuHamburMundoBebeCochecitosButacas(): Promise<void> {
+        await this.clickMundoBebeCochecitosButacas()
     }
 }

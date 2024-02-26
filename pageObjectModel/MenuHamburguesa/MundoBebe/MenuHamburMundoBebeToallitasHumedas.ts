@@ -19,7 +19,6 @@ export class MenuHamburMundoBebeToallitasHumedas extends BasePage {
         await this.click(this.TOALLITAS_HUMEDAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburMundoBebeToallitasHumedas(): Promise<void> {

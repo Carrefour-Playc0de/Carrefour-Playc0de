@@ -19,7 +19,6 @@ export class MenuHamburMundoBebeColonias extends BasePage {
         await this.click(this.COLONIAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburMundoBebeColonias(): Promise<void> {
