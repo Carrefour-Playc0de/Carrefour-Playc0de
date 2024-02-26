@@ -1205,6 +1205,36 @@ import {
 } from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaTraposPanios'
 import { MenuHamburLimpiezaEsponjas } from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaEsponjas'
 import { MenuHamburLimpiezaGuantes } from '../pageObjectModel/MenuHamburguesa/Limpieza/MenuHamburLimpiezaGuantes'
+import {
+    MenuHamburMascotasAccesoriosMascotas
+} from '../pageObjectModel/MenuHamburguesa/Mascotas/MenuHamburMascotasAccesoriosMascotas'
+import {
+    MenuHamburMascotasAlimentosGatos
+} from '../pageObjectModel/MenuHamburguesa/Mascotas/MenuHamburMascotasAlimentosGatos'
+import {
+    MenuHamburMascotasHigieneMascotas
+} from '../pageObjectModel/MenuHamburguesa/Mascotas/MenuHamburMascotasHigieneMascotas'
+import {
+    MenuHamburMundoBebeToallitasHumedas
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeToallitasHumedas'
+import { MenuHamburMundoBebeParaBanio } from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeParaBanio'
+import {
+    MenuHamburMundoBebeShampoosAcondicionadores
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeShampoosAcondicionadores'
+import { MenuHamburMundoBebeJabones } from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeJabones'
+import {
+    MenuHamburMundoBebeDespuesBanio
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeDespuesBanio'
+import {
+    MenuHamburMundoBebeOleoCalcareoTalco
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeOleoCalcareoTalco'
+import { MenuHamburMundoBebeColonias } from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeColonias'
+import {
+    MenuHamburMundoBebeAceitesCremasLociones
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeAceitesCremasLociones'
+import {
+    MenuHamburMundoBebeAlimentoBebe
+} from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeAlimentoBebe'
 
 
 
@@ -1678,12 +1708,77 @@ const test = baseTest.extend<{
     menuHamburLimpiezaTraposPanios: MenuHamburLimpiezaTraposPanios
     menuHamburLimpiezaEsponjas: MenuHamburLimpiezaEsponjas
     menuHamburLimpiezaGuantes: MenuHamburLimpiezaGuantes
+    menuHamburMascotasAccesoriosMascotas: MenuHamburMascotasAccesoriosMascotas
+    menuHamburMascotasAlimentosGatos: MenuHamburMascotasAlimentosGatos
+    menuHamburMascotasHigieneMascotas: MenuHamburMascotasHigieneMascotas
+    menuHamburMundoBebeToallitasHumedas: MenuHamburMundoBebeToallitasHumedas
+    menuHamburMundoBebeParaBanio: MenuHamburMundoBebeParaBanio
+    menuHamburMundoBebeShampoosAcondicionadores: MenuHamburMundoBebeShampoosAcondicionadores
+    menuHamburMundoBebeJabones: MenuHamburMundoBebeJabones
+    menuHamburMundoBebeDespuesBanio: MenuHamburMundoBebeDespuesBanio
+    menuHamburMundoBebeOleoCalcareoTalco: MenuHamburMundoBebeOleoCalcareoTalco
+    menuHamburMundoBebeColonias: MenuHamburMundoBebeColonias
+    menuHamburMundoBebeAceitesCremasLociones: MenuHamburMundoBebeAceitesCremasLociones
+    menuHamburMundoBebeAlimentoBebe: MenuHamburMundoBebeAlimentoBebe
 
 }>({
     loginPage: async ({ page, context }, use) => {
         const loginPage = new LoginPage(page, context, environment)
         await use(loginPage)
     },
+
+
+    // MENU HAMBURGUESA - MUNDO BEBE
+    menuHamburMundoBebeVerTodos: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeVerTodos(page, context, environment))
+    },
+    menuHamburMundoBebePaniales: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebePaniales(page, context, environment))
+    },
+    menuHamburMundoBebeToallitasHumedas: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeToallitasHumedas(page, context, environment))
+    },
+    menuHamburMundoBebeParaBanio: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeParaBanio(page, context, environment))
+    },
+    menuHamburMundoBebeShampoosAcondicionadores: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeShampoosAcondicionadores(page, context, environment))
+    },
+    menuHamburMundoBebeJabones: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeJabones(page, context, environment))
+    },
+    menuHamburMundoBebeDespuesBanio: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeDespuesBanio(page, context, environment))
+    },
+    menuHamburMundoBebeOleoCalcareoTalco: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeOleoCalcareoTalco(page, context, environment))
+    },
+    menuHamburMundoBebeColonias: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeColonias(page, context, environment))
+    },
+    menuHamburMundoBebeAceitesCremasLociones: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeAceitesCremasLociones(page, context, environment))
+    },
+    menuHamburMundoBebeAlimentoBebe: async ({ page, context }, use) => {
+        await use(new MenuHamburMundoBebeAlimentoBebe(page, context, environment))
+    },
+
+
+
+
+
+    // MENU HAMBURGUESA - PERFUMERIA
+    menuHamburPerfumeriaVerTodos: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaVerTodos(page, context, environment))
+    },
+    menuHamburPerfumeriaCuidadoDelCabello: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCuidadoDelCabello(page, context, environment))
+    },
+
+
+
+
+
 
     mainPageAndAcceptCookies: async ({ page, context }, use) => {
         await use(new MainPageAndAcceptCookies(page, context, environment))
@@ -1697,6 +1792,7 @@ const test = baseTest.extend<{
     urlCarrefour: async ({ page, context }, use) => {
         await use(new UrlCarrefour(page, context, environment))
     },
+
 
 
 
@@ -1863,6 +1959,24 @@ const test = baseTest.extend<{
     },
 
 
+    // MENU HAMBURGUESA - MASCOTAS
+    menuHamburMascotasVerTodos: async ({ page, context }, use) => {
+        await use(new MenuHamburMascotasVerTodos(page, context, environment))
+    },
+    menuHamburMascotasAlimentosSnacksPerros: async ({ page, context }, use) => {
+        await use(new MenuHamburMascotasAlimentosSnacksPerros(page, context, environment))
+    },
+    menuHamburMascotasAccesoriosMascotas: async ({ page, context }, use) => {
+        await use(new MenuHamburMascotasAccesoriosMascotas(page, context, environment))
+    },
+    menuHamburMascotasAlimentosGatos: async ({ page, context }, use) => {
+        await use(new MenuHamburMascotasAlimentosGatos(page, context, environment))
+    },
+    menuHamburMascotasHigieneMascotas: async ({ page, context }, use) => {
+        await use(new MenuHamburMascotasHigieneMascotas(page, context, environment))
+    },
+
+
     // MENU HAMBURGUESA - CONGELADOS
     menuHamburCongeladosVerTodos: async ({ page, context }, use) => {
         await use(new MenuHamburCongeladosVerTodos(page, context, environment))
@@ -2008,34 +2122,6 @@ const test = baseTest.extend<{
     menuHamburLimpiezaGuantes: async ({ page, context }, use) => {
         await use(new MenuHamburLimpiezaGuantes(page, context, environment))
     },
-
-
-    // MENU HAMBURGUESA - MASCOTAS
-    menuHamburMascotasVerTodos: async ({ page, context }, use) => {
-        await use(new MenuHamburMascotasVerTodos(page, context, environment))
-    },
-    menuHamburMascotasAlimentosSnacksPerros: async ({ page, context }, use) => {
-        await use(new MenuHamburMascotasAlimentosSnacksPerros(page, context, environment))
-    },
-
-
-    // MENU HAMBURGUESA - MUNDO BEBE
-    menuHamburMundoBebeVerTodos: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebeVerTodos(page, context, environment))
-    },
-    menuHamburMundoBebePaniales: async ({ page, context }, use) => {
-        await use(new MenuHamburMundoBebePaniales(page, context, environment))
-    },
-
-
-    // MENU HAMBURGUESA - PERFUMERIA
-    menuHamburPerfumeriaVerTodos: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaVerTodos(page, context, environment))
-    },
-    menuHamburPerfumeriaCuidadoDelCabello: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaCuidadoDelCabello(page, context, environment))
-    },
-
 
 
     // MENU HAMBURGUESA - PANADERIA

@@ -25,3 +25,72 @@ test('@Regression @MenuHamburguesa (B2C-TC-337) Verificar que funciona el Menu M
         await menuHamburMundoBebePaniales.clickMundoBebePaniales()
     })
 })
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Toallitas Humedas', async ({menuHamburMundoBebeToallitasHumedas}) => {
+
+    await test.step('Click en Toallitas Humedas', async () => {
+        await menuHamburMundoBebeToallitasHumedas.clickMundoBebeToallitasHumedas()
+    })
+})
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Para el Banio', async ({menuHamburMundoBebeParaBanio}) => {
+
+    await test.step('Click en Para el Banio', async () => {
+        await menuHamburMundoBebeParaBanio.clickMundoBebeParaBanio()
+    })
+})
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Shampoos y Acondicionadores', async ({menuHamburMundoBebeShampoosAcondicionadores}) => {
+
+    await test.step('Click en Shampoos y Acondicionadores', async () => {
+        await menuHamburMundoBebeShampoosAcondicionadores.clickMundoBebeShampoosAcondicionadores()
+    })
+})
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Jabones', async ({menuHamburMundoBebeJabones}) => {
+
+    await test.step('Click en Jabones', async () => {
+        await menuHamburMundoBebeJabones.clickMundoBebeJabones()
+    })
+})
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Despues del Banio', async ({menuHamburMundoBebeDespuesBanio}) => {
+
+    await test.step('Click en Despues del Banio', async () => {
+        await menuHamburMundoBebeDespuesBanio.clickMundoBebeDespuesBanio()
+    })
+})
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Oleo Calcareo y Talco', async ({menuHamburMundoBebeOleoCalcareoTalco}) => {
+
+    await test.step('Click en Oleo Calcareo y Talco', async () => {
+        await menuHamburMundoBebeOleoCalcareoTalco.clickMundoBebeOleoCalcareoTalco()
+    })
+})
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Colonias', async ({menuHamburMundoBebeColonias}) => {
+
+    await test.step('Click en Colonias', async () => {
+        await menuHamburMundoBebeColonias.clickMundoBebeColonias()
+    })
+})
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Aceites Cremas y Lociones', async ({menuHamburMundoBebeAceitesCremasLociones}) => {
+
+    await test.step('Click en Aceites Cremas y Lociones', async () => {
+        await menuHamburMundoBebeAceitesCremasLociones.clickMundoBebeAceitesCremasLociones()
+    })
+})
+test('@Regression @MundoBebe (B2C-TC-337) Verificar que funciona el Menu Mundo Bebe: Alimento para Bebe', async ({menuHamburMundoBebeAlimentoBebe}) => {
+
+    await test.step('Click en Alimento para Bebe', async () => {
+        await menuHamburMundoBebeAlimentoBebe.clickMundoBebeAlimentoBebe()
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
