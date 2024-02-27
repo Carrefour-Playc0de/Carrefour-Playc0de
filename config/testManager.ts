@@ -1973,7 +1973,7 @@ const test = baseTest.extend<{
         await use(new MenuHamburMundoBebeCochecitosButacas(page, context, environment))
     },
 
-    
+
     // MENU HAMBURGUESA - INDUMENTARIAS
     menuHamburIndumentariaVerTodos: async ({ page, context }, use) => {
         await use(new MenuHamburIndumentariaVerTodos(page, context, environment))
