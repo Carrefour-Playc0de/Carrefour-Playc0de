@@ -18,13 +18,13 @@ test('@Smoke @Regression (B2C-TC-1111) Verificar que funciona el Menu Limpieza: 
         await menuHamburLimpiezaVerTodo.clickLimpiezaVerTodo()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpieza de la Ropa', async ({menuHamburLimpiezaLimpiezaDeRopa}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-335) Verificar que funciona el Menu Limpieza: Limpieza de la Ropa', async ({menuHamburLimpiezaLimpiezaDeRopa}) => {
 
     await test.step('Click en Limpieza de la Ropa', async () => {
         await menuHamburLimpiezaLimpiezaDeRopa.clickLimpiezaLimpiezaDeRopa()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Jabones para la Ropa', async ({menuHamburLimpiezaJabonesParaRopa}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1208) Verificar que funciona el Menu Limpieza: Jabones para la Ropa', async ({menuHamburLimpiezaJabonesParaRopa}) => {
 
     await test.step('Click en Jabones para la Ropa', async () => {
         await menuHamburLimpiezaJabonesParaRopa.clickLimpiezaJabonesParaRopa()
@@ -36,205 +36,205 @@ test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu 
         await menuHamburLimpiezaPrelavadoQuitamanchas.clickLimpiezaPrelavadoQuitamanchas()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Suavizantes para la Ropa', async ({menuHamburLimpiezaSuavizantesRopa}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1209) Verificar que funciona el Menu Limpieza: Suavizantes para la Ropa', async ({menuHamburLimpiezaSuavizantesRopa}) => {
 
     await test.step('Click en Suavizantes para la Ropa', async () => {
         await menuHamburLimpiezaSuavizantesRopa.clickLimpiezaSuavizantesRopa()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Aprestos', async ({menuHamburLimpiezaAprestos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1210) Verificar que funciona el Menu Limpieza: Aprestos', async ({menuHamburLimpiezaAprestos}) => {
 
     await test.step('Click en Aprestos', async () => {
         await menuHamburLimpiezaAprestos.clickLimpiezaAprestos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Perfumantes para Tela', async ({menuHamburLimpiezaPerfumantesTela}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1211) Verificar que funciona el Menu Limpieza: Perfumantes para Tela', async ({menuHamburLimpiezaPerfumantesTela}) => {
 
     await test.step('Click en Perfumantes para Tela', async () => {
         await menuHamburLimpiezaPerfumantesTela.clickLimpiezaPerfumantesTela()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Cuidado del Calzado', async ({menuHamburLimpiezaCuidadoCalzado}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1212) Verificar que funciona el Menu Limpieza: Cuidado del Calzado', async ({menuHamburLimpiezaCuidadoCalzado}) => {
 
     await test.step('Click en Cuidado del Calzado', async () => {
         await menuHamburLimpiezaCuidadoCalzado.clickLimpiezaCuidadoCalzado()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpieza del Hogar', async ({menuHamburLimpiezaLimpiezaHogar}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1213) Verificar que funciona el Menu Limpieza: Limpieza del Hogar', async ({menuHamburLimpiezaLimpiezaHogar}) => {
 
     await test.step('Click en Limpieza del Hogar', async () => {
         await menuHamburLimpiezaLimpiezaHogar.clickLimpiezaLimpiezaHogar()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpiadores de Piso', async ({menuHamburLimpiezaLimpiadoresPiso}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1214) Verificar que funciona el Menu Limpieza: Limpiadores de Piso', async ({menuHamburLimpiezaLimpiadoresPiso}) => {
 
     await test.step('Click en Limpiadores de Piso', async () => {
         await menuHamburLimpiezaLimpiadoresPiso.clickLimpiezaLimpiadoresPiso()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Autobrillos y Ceras para Pisos', async ({menuHamburLimpiezaAutobrillosCerasPisos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1215) Verificar que funciona el Menu Limpieza: Autobrillos y Ceras para Pisos', async ({menuHamburLimpiezaAutobrillosCerasPisos}) => {
 
     await test.step('Click en Autobrillos y Ceras para Pisos', async () => {
         await menuHamburLimpiezaAutobrillosCerasPisos.clickLimpiezaAutobrillosCerasPisos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpiavidrios', async ({menuHamburLimpiezaLimpiavidrios}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1216) Verificar que funciona el Menu Limpieza: Limpiavidrios', async ({menuHamburLimpiezaLimpiavidrios}) => {
 
     await test.step('Click en Limpiavidrios', async () => {
         await menuHamburLimpiezaLimpiavidrios.clickLimpiezaLimpiavidrios()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Lustramuebles', async ({menuHamburLimpiezaLustramuebles}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1217) Verificar que funciona el Menu Limpieza: Lustramuebles', async ({menuHamburLimpiezaLustramuebles}) => {
 
     await test.step('Click en Lustramuebles', async () => {
         await menuHamburLimpiezaLustramuebles.clickLimpiezaLustramuebles()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Insecticidas', async ({menuHamburLimpiezaInsecticidas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1218) Verificar que funciona el Menu Limpieza: Insecticidas', async ({menuHamburLimpiezaInsecticidas}) => {
 
     await test.step('Click en Insecticidas', async () => {
         await menuHamburLimpiezaInsecticidas.clickLimpiezaInsecticidas()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpieza de Cocina', async ({menuHamburLimpiezaLimpiezaCocina}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1219) Verificar que funciona el Menu Limpieza: Limpieza de Cocina', async ({menuHamburLimpiezaLimpiezaCocina}) => {
 
     await test.step('Click en Limpieza de Cocina', async () => {
         await menuHamburLimpiezaLimpiezaCocina.clickLimpiezaLimpiezaCocina()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Detergentes', async ({menuHamburLimpiezaDetergentes}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1220) Verificar que funciona el Menu Limpieza: Detergentes', async ({menuHamburLimpiezaDetergentes}) => {
 
     await test.step('Click en Detergentes', async () => {
         await menuHamburLimpiezaDetergentes.clickLimpiezaDetergentes()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpiadores Liquidos', async ({menuHamburLimpiezaLimpiadoresLiquidos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1221) Verificar que funciona el Menu Limpieza: Limpiadores Liquidos', async ({menuHamburLimpiezaLimpiadoresLiquidos}) => {
 
     await test.step('Click en Limpiadores Liquidos', async () => {
         await menuHamburLimpiezaLimpiadoresLiquidos.clickLimpiezaLimpiadoresLiquidos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpiadores Cremosos', async ({menuHamburLimpiezaLimpiadoresCremosos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1222) Verificar que funciona el Menu Limpieza: Limpiadores Cremosos', async ({menuHamburLimpiezaLimpiadoresCremosos}) => {
 
     await test.step('Click en Limpiadores Cremosos', async () => {
         await menuHamburLimpiezaLimpiadoresCremosos.clickLimpiezaLimpiadoresCremosos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Para el Lavavajillas', async ({menuHamburLimpiezaParaLavavajillas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1223) Verificar que funciona el Menu Limpieza: Para el Lavavajillas', async ({menuHamburLimpiezaParaLavavajillas}) => {
 
     await test.step('Click en Para el Lavavajillas', async () => {
         await menuHamburLimpiezaParaLavavajillas.clickLimpiezaParaLavavajillas()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Palillos Velas y Fosforos', async ({menuHamburLimpiezaPalillosVelasFosforos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1224) Verificar que funciona el Menu Limpieza: Palillos Velas y Fosforos', async ({menuHamburLimpiezaPalillosVelasFosforos}) => {
 
     await test.step('Click en Palillos Velas y Fosforos', async () => {
         await menuHamburLimpiezaPalillosVelasFosforos.clickLimpiezaPalillosVelasFosforos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Lavandinas', async ({menuHamburLimpiezaLavandinas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1225) Verificar que funciona el Menu Limpieza: Lavandinas', async ({menuHamburLimpiezaLavandinas}) => {
 
     await test.step('Click en Lavandinas', async () => {
         await menuHamburLimpiezaLavandinas.clickLimpiezaLavandinas()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Rollos de Cocina y Servilletas', async ({menuHamburLimpiezaRollosCocinaServilletas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1226) Verificar que funciona el Menu Limpieza: Rollos de Cocina y Servilletas', async ({menuHamburLimpiezaRollosCocinaServilletas}) => {
 
     await test.step('Click en Rollos de Cocina y Servilletas', async () => {
         await menuHamburLimpiezaRollosCocinaServilletas.clickLimpiezaRollosCocinaServilletas()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Papeles Higienicos', async ({menuHamburLimpiezaPapelesHigienicos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1227) Verificar que funciona el Menu Limpieza: Papeles Higienicos', async ({menuHamburLimpiezaPapelesHigienicos}) => {
 
     await test.step('Click en Papeles Higienicos', async () => {
         await menuHamburLimpiezaPapelesHigienicos.clickLimpiezaPapelesHigienicos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpieza de Banio', async ({menuHamburLimpiezaLimpiezaBanio}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1228) Verificar que funciona el Menu Limpieza: Limpieza de Banio', async ({menuHamburLimpiezaLimpiezaBanio}) => {
 
     await test.step('Click en Limpieza de Banio', async () => {
         await menuHamburLimpiezaLimpiezaBanio.clickLimpiezaLimpiezaBanio()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Limpiadores de Banio', async ({menuHamburLimpiezaLimpiadoresBanio}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1229) Verificar que funciona el Menu Limpieza: Limpiadores de Banio', async ({menuHamburLimpiezaLimpiadoresBanio}) => {
 
     await test.step('Click en Limpiadores de Banio', async () => {
         await menuHamburLimpiezaLimpiadoresBanio.clickLimpiezaLimpiadoresBanio()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Canastas y Bloques', async ({menuHamburLimpiezaCanastasBloques}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1230) Verificar que funciona el Menu Limpieza: Canastas y Bloques', async ({menuHamburLimpiezaCanastasBloques}) => {
 
     await test.step('Click en Canastas y Bloques', async () => {
         await menuHamburLimpiezaCanastasBloques.navigateToMenuHamburLimpiezaCanastasBloques()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Desodorantes de Ambiente', async ({menuHamburLimpiezaDesodorantesAmbiente}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1231) Verificar que funciona el Menu Limpieza: Desodorantes de Ambiente', async ({menuHamburLimpiezaDesodorantesAmbiente}) => {
 
     await test.step('Click en Desodorantes de Ambiente', async () => {
         await menuHamburLimpiezaDesodorantesAmbiente.clickLimpiezaDesodorantesAmbiente()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Difusores y Repuestos', async ({menuHamburLimpiezaDifusoresRepuestos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1232) Verificar que funciona el Menu Limpieza: Difusores y Repuestos', async ({menuHamburLimpiezaDifusoresRepuestos}) => {
 
     await test.step('Click en Difusores y Repuestos', async () => {
         await menuHamburLimpiezaDifusoresRepuestos.clickLimpiezaDifusoresRepuestos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Antihumedad', async ({menuHamburLimpiezaAntihumedad}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1233) Verificar que funciona el Menu Limpieza: Antihumedad', async ({menuHamburLimpiezaAntihumedad}) => {
 
     await test.step('Click en Antihumedad', async () => {
         await menuHamburLimpiezaAntihumedad.clickLimpiezaAntihumedad()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Desodorantes y Desinfectantes', async ({menuHamburLimpiezaDesodorantesDesinfectantes}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1234) Verificar que funciona el Menu Limpieza: Desodorantes y Desinfectantes', async ({menuHamburLimpiezaDesodorantesDesinfectantes}) => {
 
     await test.step('Click en Desodorantes y Desinfectantes', async () => {
         await menuHamburLimpiezaDesodorantesDesinfectantes.clickLimpiezaDesodorantesDesinfectantes()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Articulos de Limpieza', async ({menuHamburLimpiezaArticulosLimpieza}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1235) Verificar que funciona el Menu Limpieza: Articulos de Limpieza', async ({menuHamburLimpiezaArticulosLimpieza}) => {
 
     await test.step('Click en Articulos de Limpieza', async () => {
         await menuHamburLimpiezaArticulosLimpieza.clickLimpiezaArticulosLimpieza()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Baldes y Palanganas', async ({menuHamburLimpiezaBaldesPalanganas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1236) Verificar que funciona el Menu Limpieza: Baldes y Palanganas', async ({menuHamburLimpiezaBaldesPalanganas}) => {
 
     await test.step('Click en Baldes y Palanganas', async () => {
         await menuHamburLimpiezaBaldesPalanganas.clickLimpiezaBaldesPalanganas()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Cestos de Basuras', async ({menuHamburLimpiezaCestosBasuras}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1237) Verificar que funciona el Menu Limpieza: Cestos de Basuras', async ({menuHamburLimpiezaCestosBasuras}) => {
 
     await test.step('Click en Cestos de Basuras', async () => {
         await menuHamburLimpiezaCestosBasuras.clickLimpiezaCestosBasuras()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Bolsas de Residuos', async ({menuHamburLimpiezaBolsasResiduos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1238) Verificar que funciona el Menu Limpieza: Bolsas de Residuos', async ({menuHamburLimpiezaBolsasResiduos}) => {
 
     await test.step('Click en Bolsas de Residuos', async () => {
         await menuHamburLimpiezaBolsasResiduos.clickLimpiezaBolsasResiduos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Escobas Secadores y Palas', async ({menuHamburLimpiezaEscobasSecadoresPalas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1239) Verificar que funciona el Menu Limpieza: Escobas Secadores y Palas', async ({menuHamburLimpiezaEscobasSecadoresPalas}) => {
 
     await test.step('Click en Escobas Secadores y Palas', async () => {
         await menuHamburLimpiezaEscobasSecadoresPalas.clickLimpiezaEscobasSecadoresPalas()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Trapos y Panios', async ({menuHamburLimpiezaTraposPanios}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1240) Verificar que funciona el Menu Limpieza: Trapos y Panios', async ({menuHamburLimpiezaTraposPanios}) => {
 
     await test.step('Click en Trapos y Panios', async () => {
         await menuHamburLimpiezaTraposPanios.clickLimpiezaTraposPanios()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Esponjas', async ({menuHamburLimpiezaEsponjas}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1241) Verificar que funciona el Menu Limpieza: Esponjas', async ({menuHamburLimpiezaEsponjas}) => {
 
     await test.step('Click en Esponjas', async () => {
         await menuHamburLimpiezaEsponjas.clickLimpiezaEsponjas()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1163) Verificar que funciona el Menu Limpieza: Guantes', async ({menuHamburLimpiezaGuantes}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1242) Verificar que funciona el Menu Limpieza: Guantes', async ({menuHamburLimpiezaGuantes}) => {
 
     await test.step('Click en Guantes', async () => {
         await menuHamburLimpiezaGuantes.clickLimpiezaGuantes()

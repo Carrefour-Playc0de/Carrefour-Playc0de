@@ -18,31 +18,31 @@ test('@Smoke @Regression (B2C-TC-1138) Verificar que funciona el Menu Indumentar
         await menuHamburIndumentariaVerTodos.clickIndumentariaVerTodos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1164) Verificar que funciona el Menu Indumentaria: Adultos', async ({menuHamburIndumentariaAdultos}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1243) Verificar que funciona el Menu Indumentaria: Adultos', async ({menuHamburIndumentariaAdultos}) => {
 
     await test.step('Click en Adultos', async () => {
         await menuHamburIndumentariaAdultos.clickIndumentariaAdultos()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1164) Verificar que funciona el Menu Indumentaria: Hombre', async ({menuHamburIndumentariaHombre}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1244) Verificar que funciona el Menu Indumentaria: Hombre', async ({menuHamburIndumentariaHombre}) => {
 
     await test.step('Click en Hombre', async () => {
         await menuHamburIndumentariaHombre.clickIndumentariaHombre()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1164) Verificar que funciona el Menu Indumentaria: Mujer', async ({menuHamburIndumentariaMujer}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1245) Verificar que funciona el Menu Indumentaria: Mujer', async ({menuHamburIndumentariaMujer}) => {
 
     await test.step('Click en Mujer', async () => {
         await menuHamburIndumentariaMujer.clickIndumentariaMujer()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1164) Verificar que funciona el Menu Indumentaria: Bebes', async ({menuHamburIndumentariaBebes}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1246) Verificar que funciona el Menu Indumentaria: Bebes', async ({menuHamburIndumentariaBebes}) => {
 
     await test.step('Click en Bebes', async () => {
         await menuHamburIndumentariaBebes.clickIndumentariaBebes()
     })
 })
-test('@Regression @MenuHamburguesa (B2C-TC-1164) Verificar que funciona el Menu Indumentaria: Ninios y Ninias', async ({menuHamburIndumentariaNiniosNinias}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1247) Verificar que funciona el Menu Indumentaria: Ninios y Ninias', async ({menuHamburIndumentariaNiniosNinias}) => {
 
     await test.step('Click en Ninios y Ninias', async () => {
         await menuHamburIndumentariaNiniosNinias.clickIndumentariaNiniosNinias()
