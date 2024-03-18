@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaGelFijadores extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.GEL_FIJADORES = this.page.locator('//a [@id="menu-item-category-gel-fijadores"]')
-        // Gel y Fijadores
     }
 
     async clickPerfumeriaGelFijadores(): Promise<void> {

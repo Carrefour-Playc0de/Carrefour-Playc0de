@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaTratamientosCapilares extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.TRATAMIENTOS_CAPILARES = this.page.locator('//a [@id="menu-item-category-tratamientos-capilares"]')
-        // Tratamientos Capilares
     }
 
     async clickPerfumeriaTratamientosCapilares(): Promise<void> {

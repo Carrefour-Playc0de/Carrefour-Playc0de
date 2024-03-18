@@ -25,3 +25,63 @@ test('@Regression @MenuHamburguesa (B2C-TC-336) Verificar que funciona el Menu P
         await menuHamburPerfumeriaCuidadoDelCabello.navigateToMenuHamburPerfumeriaCuidadoDelCabello()
     })
 })
+test('@ABCD  () Verificar que funciona el Menu Perfumería: Shampoos', async ({menuHamburPerfumeriaShampoos}) => {
+
+    await test.step('Click en Shampoos', async () => {
+        await menuHamburPerfumeriaShampoos.clickPerfumeriaShampoos()
+    })
+})
+test('@ABCD  () Verificar que funciona el Menu Perfumería: Acondicionadores', async ({menuHamburPerfumeriaAcondicionadores}) => {
+
+    await test.step('Click en Acondicionadores', async () => {
+        await menuHamburPerfumeriaAcondicionadores.clickPerfumeriaAcondicionadores()
+    })
+})
+test('@ABCD  () Verificar que funciona el Menu Perfumería: Tratamientos Capilares', async ({menuHamburPerfumeriaTratamientosCapilares}) => {
+
+    await test.step('Click en Tratamientos Capilares', async () => {
+        await menuHamburPerfumeriaTratamientosCapilares.clickPerfumeriaTratamientosCapilares()
+    })
+})
+test('@ABCD  () Verificar que funciona el Menu Perfumería: Cremas para Peinar', async ({menuHamburPerfumeriaCremasPeinar}) => {
+
+    await test.step('Click en Cremas para Peinar', async () => {
+        await menuHamburPerfumeriaCremasPeinar.clickPerfumeriCremasPeinar()
+    })
+})
+test('@ABCD  () Verificar que funciona el Menu Perfumería: Coloracion', async ({menuHamburPerfumeriaColoracion}) => {
+
+    await test.step('Click en Coloracion', async () => {
+        await menuHamburPerfumeriaColoracion.clickPerfumeriaColoracion()
+    })
+})
+test('@ABCD  () Verificar que funciona el Menu Perfumería: Gel y Fijadores', async ({menuHamburPerfumeriaGelFijadores}) => {
+
+    await test.step('Click en Gel y Fijadores', async () => {
+        await menuHamburPerfumeriaGelFijadores.clickPerfumeriaGelFijadores()
+    })
+})
+test('@ABCD  () Verificar que funciona el Menu Perfumería: Piojicidas', async ({menuHamburPerfumeriaPiojicidas}) => {
+
+    await test.step('Click en Piojicidas', async () => {
+        await menuHamburPerfumeriaPiojicidas.clickPerfumeriaPiojicidas()
+    })
+})
+test('@ABCD  () Verificar que funciona el Menu Perfumería: Accesorios para el Cabello', async ({menuHamburPerfumeriaAccesoriosCabello}) => {
+
+    await test.step('Click en Accesorios para el Cabello', async () => {
+        await menuHamburPerfumeriaAccesoriosCabello.clickPerfumeriaAccesoriosCabello()
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+

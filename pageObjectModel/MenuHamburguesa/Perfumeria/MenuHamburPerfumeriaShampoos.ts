@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaShampoos extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.SHAMPOOS = this.page.locator('//a [@id="menu-item-category-shampoos"]')
-        // Shampoos
     }
 
     async clickPerfumeriaShampoos(): Promise<void> {

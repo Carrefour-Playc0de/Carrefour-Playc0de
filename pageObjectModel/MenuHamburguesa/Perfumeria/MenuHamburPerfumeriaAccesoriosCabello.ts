@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaAccesoriosCabello extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.ACCESORIOS_CABELLO = this.page.locator('//a [@id="menu-item-category-accesorios-cabello"]')
-        // Accesorios para el Cabello
     }
 
     async clickPerfumeriaAccesoriosCabello(): Promise<void> {

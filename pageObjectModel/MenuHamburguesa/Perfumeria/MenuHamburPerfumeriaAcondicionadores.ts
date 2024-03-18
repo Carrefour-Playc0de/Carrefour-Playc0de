@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaAcondicionadores extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.ACONDICIONADORES = this.page.locator('//a [@id="menu-item-category-acondicionadores"]')
-        // Acondicionadores
     }
 
     async clickPerfumeriaAcondicionadores(): Promise<void> {

@@ -1253,6 +1253,30 @@ import {
 import {
     MenuHamburMundoBebeCochecitosButacas
 } from '../pageObjectModel/MenuHamburguesa/MundoBebe/MenuHamburMundoBebeCochecitosButacas'
+import {
+    MenuHamburPerfumeriaShampoos
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaShampoos'
+import {
+    MenuHamburPerfumeriaAcondicionadores
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaAcondicionadores'
+import {
+    MenuHamburPerfumeriaTratamientosCapilares
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaTratamientosCapilares'
+import {
+    MenuHamburPerfumeriaCremasPeinar
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCremasPeinar'
+import {
+    MenuHamburPerfumeriaColoracion
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaColoracion'
+import {
+    MenuHamburPerfumeriaGelFijadores
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaGelFijadores'
+import {
+    MenuHamburPerfumeriaPiojicidas
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaPiojicidas'
+import {
+    MenuHamburPerfumeriaAccesoriosCabello
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaAccesoriosCabello'
 
 
 
@@ -1744,6 +1768,14 @@ const test = baseTest.extend<{
     menuHamburMundoBebeChupetesMamaderasAccesorios: MenuHamburMundoBebeChupetesMamaderasAccesorios
     menuHamburMundoBebePelelasBanieras: MenuHamburMundoBebePelelasBanieras
     menuHamburMundoBebeCochecitosButacas: MenuHamburMundoBebeCochecitosButacas
+    menuHamburPerfumeriaShampoos: MenuHamburPerfumeriaShampoos
+    menuHamburPerfumeriaAcondicionadores: MenuHamburPerfumeriaAcondicionadores
+    menuHamburPerfumeriaTratamientosCapilares: MenuHamburPerfumeriaTratamientosCapilares
+    menuHamburPerfumeriaCremasPeinar: MenuHamburPerfumeriaCremasPeinar
+    menuHamburPerfumeriaColoracion: MenuHamburPerfumeriaColoracion
+    menuHamburPerfumeriaGelFijadores: MenuHamburPerfumeriaGelFijadores
+    menuHamburPerfumeriaPiojicidas: MenuHamburPerfumeriaPiojicidas
+    menuHamburPerfumeriaAccesoriosCabello: MenuHamburPerfumeriaAccesoriosCabello
 
 }>({
     loginPage: async ({ page, context }, use) => {
@@ -1760,6 +1792,32 @@ const test = baseTest.extend<{
     menuHamburPerfumeriaCuidadoDelCabello: async ({ page, context }, use) => {
         await use(new MenuHamburPerfumeriaCuidadoDelCabello(page, context, environment))
     },
+    menuHamburPerfumeriaShampoos: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaShampoos(page, context, environment))
+    },
+    menuHamburPerfumeriaAcondicionadores: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaAcondicionadores(page, context, environment))
+    },
+    menuHamburPerfumeriaTratamientosCapilares: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaTratamientosCapilares(page, context, environment))
+    },
+    menuHamburPerfumeriaCremasPeinar: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCremasPeinar(page, context, environment))
+    },
+    menuHamburPerfumeriaColoracion: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaColoracion(page, context, environment))
+    },
+    menuHamburPerfumeriaGelFijadores: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaGelFijadores(page, context, environment))
+    },
+    menuHamburPerfumeriaPiojicidas: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaPiojicidas(page, context, environment))
+    },
+    menuHamburPerfumeriaAccesoriosCabello: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaAccesoriosCabello(page, context, environment))
+    },
+
+
 
 
 

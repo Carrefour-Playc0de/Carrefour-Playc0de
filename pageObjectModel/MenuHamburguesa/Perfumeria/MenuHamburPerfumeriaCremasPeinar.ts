@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaCremasPeinar extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.CREMAS_PEINAR = this.page.locator('//a [@id="menu-item-category-cremas-peinar"]')
-        // Cremas para Peinar
     }
 
     async clickPerfumeriCremasPeinar(): Promise<void> {

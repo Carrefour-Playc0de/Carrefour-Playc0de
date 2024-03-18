@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaColoracion extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.COLORACION = this.page.locator('//a [@id="menu-item-category-coloracion"]')
-        // Coloracion
     }
 
     async clickPerfumeriaColoracion(): Promise<void> {

@@ -12,7 +12,7 @@ export class MenuHamburPerfumeriaPiojicidas extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.PIOJICIDAS = this.page.locator('//a [@id="menu-item-category-piojicidas"]')
-        // Piojicidas
+        //
     }
 
     async clickPerfumeriaPiojicidas(): Promise<void> {
