@@ -12,7 +12,7 @@ export class RetiroDriveSuperProvCiudAutonoBsAsPartidoAgronomiaHVDevoto extends 
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.HIPER_VILLA_DEVOTO = this.page.locator("//body/div[contains(@class,'left-0 fixed top-0 bottom-0 bg-base z-999 flex flex-column')]/div[contains(@class,'valtech-carrefourar-region-locator-0-x-drawerContent valtech-carrefourar-region-locator-0-x-drawerContent--locator overflow-y-auto')]/div[contains(@class,'valtech-carrefourar-region-locator-0-x-childrenContainer valtech-carrefourar-region-locator-0-x-childrenContainer--locator flex flex-grow-1')]/div[contains(@class,'w-100 h-100 flex flex-column mh5 pb6 pb0-m')]/div[contains(@class,'store-list mb0 mt0 overflow-y-scroll h-100')]/div[5]/div[1]")
+        this.HIPER_VILLA_DEVOTO = this.page.locator("(//p[normalize-space()='Hiper Villa Devoto'])[1]")
     }
 
     async clickHiperVillaDevoto(): Promise<void> {
