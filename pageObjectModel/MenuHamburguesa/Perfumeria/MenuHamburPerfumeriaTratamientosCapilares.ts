@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaTratamientosCapilares extends BasePage {
         await this.click(this.TRATAMIENTOS_CAPILARES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaTratamientosCapilares(): Promise<void> {

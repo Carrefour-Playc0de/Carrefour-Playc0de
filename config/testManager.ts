@@ -1277,6 +1277,24 @@ import {
 import {
     MenuHamburPerfumeriaAccesoriosCabello
 } from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaAccesoriosCabello'
+import {
+    MenuHamburPerfumeriaCuidadoDental
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCuidadoDental'
+import {
+    MenuHamburPerfumeriaPastaDental
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaPastaDental'
+import {
+    MenuHamburPerfumeriaEnjuaguesBucales
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaEnjuaguesBucales'
+import {
+    MenuHamburPerfumeriaCepillosDientes
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCepillosDientes'
+import {
+    MenuHamburPerfumeriaHilosDentales
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaHilosDentales'
+import {
+    MenuHamburPerfumeriaParaProtesisDentales
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaParaProtesisDentales'
 
 
 
@@ -1776,12 +1794,21 @@ const test = baseTest.extend<{
     menuHamburPerfumeriaGelFijadores: MenuHamburPerfumeriaGelFijadores
     menuHamburPerfumeriaPiojicidas: MenuHamburPerfumeriaPiojicidas
     menuHamburPerfumeriaAccesoriosCabello: MenuHamburPerfumeriaAccesoriosCabello
+    menuHamburPerfumeriaCuidadoDental: MenuHamburPerfumeriaCuidadoDental
+    menuHamburPerfumeriaPastaDental: MenuHamburPerfumeriaPastaDental
+    menuHamburPerfumeriaEnjuaguesBucales: MenuHamburPerfumeriaEnjuaguesBucales
+    menuHamburPerfumeriaCepillosDientes: MenuHamburPerfumeriaCepillosDientes
+    menuHamburPerfumeriaHilosDentales: MenuHamburPerfumeriaHilosDentales
+    menuHamburPerfumeriaParaProtesisDentales: MenuHamburPerfumeriaParaProtesisDentales
 
 }>({
     loginPage: async ({ page, context }, use) => {
         const loginPage = new LoginPage(page, context, environment)
         await use(loginPage)
     },
+
+
+
 
 
 
@@ -1815,6 +1842,24 @@ const test = baseTest.extend<{
     },
     menuHamburPerfumeriaAccesoriosCabello: async ({ page, context }, use) => {
         await use(new MenuHamburPerfumeriaAccesoriosCabello(page, context, environment))
+    },
+    menuHamburPerfumeriaCuidadoDental: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCuidadoDental(page, context, environment))
+    },
+    menuHamburPerfumeriaPastaDental: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaPastaDental(page, context, environment))
+    },
+    menuHamburPerfumeriaEnjuaguesBucales: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaEnjuaguesBucales(page, context, environment))
+    },
+    menuHamburPerfumeriaCepillosDientes: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCepillosDientes(page, context, environment))
+    },
+    menuHamburPerfumeriaHilosDentales: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaHilosDentales(page, context, environment))
+    },
+    menuHamburPerfumeriaParaProtesisDentales: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaParaProtesisDentales(page, context, environment))
     },
 
 

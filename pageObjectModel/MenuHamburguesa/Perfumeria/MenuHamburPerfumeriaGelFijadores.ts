@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaGelFijadores extends BasePage {
         await this.click(this.GEL_FIJADORES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaGelFijadores(): Promise<void> {

@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaColoracion extends BasePage {
         await this.click(this.COLORACION)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaColoracion(): Promise<void> {

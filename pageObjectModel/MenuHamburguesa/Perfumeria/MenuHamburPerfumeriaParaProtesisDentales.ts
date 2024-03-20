@@ -2,25 +2,25 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburPerfumeriaShampoos extends BasePage {
+export class MenuHamburPerfumeriaParaProtesisDentales extends BasePage {
 
-    readonly SHAMPOOS: Locator
+    readonly PROTESIS_DENTALES: Locator
 
     private env: any
     constructor(page: Page, context: BrowserContext, environment: string) {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.SHAMPOOS = this.page.locator('//a [@id="menu-item-category-shampoos"]')
+        this.PROTESIS_DENTALES = this.page.locator('//a [@id="menu-item-category-para-protesis-dentales"]')
     }
 
-    async clickPerfumeriaShampoos(): Promise<void> {
-        await this.click(this.SHAMPOOS)
+    async clickPerfumeriaParaProtesisDentales(): Promise<void> {
+        await this.click(this.PROTESIS_DENTALES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
     }
 
-    async navigateToMenuHamburPerfumeriaShampoos(): Promise<void> {
-        await this.clickPerfumeriaShampoos()
+    async navigateToMenuHamburPerfumeriaParaProtesisDentales(): Promise<void> {
+        await this.clickPerfumeriaParaProtesisDentales()
     }
 }

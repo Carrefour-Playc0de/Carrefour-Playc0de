@@ -73,7 +73,42 @@ test('@Regression @MenuHamburguesa (B2C-TC-1260) Verificar que funciona el Menu 
         await menuHamburPerfumeriaAccesoriosCabello.clickPerfumeriaAccesoriosCabello()
     })
 })
+test('@Regression @MenuHamburguesa (B2C-TC-1261) Verificar que funciona el Menu Perfumería: Cuidado Dental', async ({menuHamburPerfumeriaCuidadoDental}) => {
 
+    await test.step('Click en Cuidado Dental', async () => {
+        await menuHamburPerfumeriaCuidadoDental.clickPerfumeriaCuidadoDental()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1262) Verificar que funciona el Menu Perfumería: Pasta Dental', async ({menuHamburPerfumeriaPastaDental}) => {
+
+    await test.step('Click en Pasta Dental', async () => {
+        await menuHamburPerfumeriaPastaDental.clickPerfumeriaPastaDental()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1263) Verificar que funciona el Menu Perfumería: Enjuagues Bucales', async ({menuHamburPerfumeriaEnjuaguesBucales}) => {
+
+    await test.step('Click en Enjuagues Bucales', async () => {
+        await menuHamburPerfumeriaEnjuaguesBucales.clickPerfumeriaEnjuaguesBucales()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1264) Verificar que funciona el Menu Perfumería: Cepillos de Dientes', async ({menuHamburPerfumeriaCepillosDientes}) => {
+
+    await test.step('Click en Cepillos de Dientes', async () => {
+        await menuHamburPerfumeriaCepillosDientes.clickPerfumeriaCepillosDientes()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1265) Verificar que funciona el Menu Perfumería: Hilos Dentales', async ({menuHamburPerfumeriaHilosDentales}) => {
+
+    await test.step('Click en Hilos Dentales', async () => {
+        await menuHamburPerfumeriaHilosDentales.clickPerfumeriaHilosDentales()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1266) Verificar que funciona el Menu Perfumería: Para Protesis Dentales', async ({menuHamburPerfumeriaParaProtesisDentales}) => {
+
+    await test.step('Click en Para Protesis Dentales', async () => {
+        await menuHamburPerfumeriaParaProtesisDentales.clickPerfumeriaParaProtesisDentales()
+    })
+})
 
 
 

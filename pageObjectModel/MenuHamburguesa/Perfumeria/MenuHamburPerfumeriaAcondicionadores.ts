@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaAcondicionadores extends BasePage {
         await this.click(this.ACONDICIONADORES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaAcondicionadores(): Promise<void> {

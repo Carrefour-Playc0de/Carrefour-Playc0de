@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaAccesoriosCabello extends BasePage {
         await this.click(this.ACCESORIOS_CABELLO)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaAccesoriosCabello(): Promise<void> {
