@@ -109,6 +109,61 @@ test('@Regression @MenuHamburguesa (B2C-TC-1266) Verificar que funciona el Menu 
         await menuHamburPerfumeriaParaProtesisDentales.clickPerfumeriaParaProtesisDentales()
     })
 })
+test('@Regression @MenuHamburguesa (B2C-TC-1267) Verificar que funciona el Menu Perfumería: Jabones', async ({menuHamburPerfumeriaJabones}) => {
+
+    await test.step('Click en Jabones', async () => {
+        await menuHamburPerfumeriaJabones.clickPerfumeriaJabones()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1268) Verificar que funciona el Menu Perfumería: Jabones Liquidos', async ({menuHamburPerfumeriaJabonesLiquidos}) => {
+
+    await test.step('Click en Jabones Liquidos', async () => {
+        await menuHamburPerfumeriaJabonesLiquidos.clickPerfumeriaJabonesLiquidos()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1269) Verificar que funciona el Menu Perfumería: Jabones en Barra', async ({menuHamburPerfumeriaJabonesBarra}) => {
+
+    await test.step('Click en Jabones en Barra', async () => {
+        await menuHamburPerfumeriaJabonesBarra.clickPerfumeriaJabonesBarra()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1270) Verificar que funciona el Menu Perfumería: Esponjas y otros Accesorios', async ({menuHamburPerfumeriaEsponjasOtrosAccesorios}) => {
+
+    await test.step('Click en Esponjas y otros Accesorios', async () => {
+        await menuHamburPerfumeriaEsponjasOtrosAccesorios.clickPerfumeriaEsponjasOtrosAccesorios()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1271) Verificar que funciona el Menu Perfumería: Proteccion Femenina', async ({menuHamburPerfumeriaProteccionFemenina}) => {
+
+    await test.step('Click en Proteccion Femenina', async () => {
+        await menuHamburPerfumeriaProteccionFemenina.clickPerfumeriaProteccionFemenina()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1272) Verificar que funciona el Menu Perfumería: Toallitas Femeninas', async ({menuHamburPerfumeriaToallitasFemeninas}) => {
+
+    await test.step('Click en Toallitas Femeninas', async () => {
+        await menuHamburPerfumeriaToallitasFemeninas.clickPerfumeriaToallitasFemeninas()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1273) Verificar que funciona el Menu Perfumería: Protectores Diarios', async ({menuHamburPerfumeriaProtectoresDiarios}) => {
+
+    await test.step('Click en Protectores Diarios', async () => {
+        await menuHamburPerfumeriaProtectoresDiarios.clickPerfumeriaProtectoresDiarios()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1274) Verificar que funciona el Menu Perfumería: Tampones', async ({menuHamburPerfumeriaTampones}) => {
+
+    await test.step('Click en Tampones', async () => {
+        await menuHamburPerfumeriaTampones.clickPerfumeriaTampones()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1275) Verificar que funciona el Menu Perfumería: Higiene Intima', async ({menuHamburPerfumeriaHigieneIntima}) => {
+
+    await test.step('Click en Higiene Intima', async () => {
+        await menuHamburPerfumeriaHigieneIntima.clickPerfumeriaHigieneIntima()
+    })
+})
+
 
 
 
