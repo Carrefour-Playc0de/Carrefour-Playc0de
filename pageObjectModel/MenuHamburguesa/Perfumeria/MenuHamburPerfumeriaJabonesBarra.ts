@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaJabonesBarra extends BasePage {
         await this.click(this.JABONES_BARRA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaJabonesBarra(): Promise<void> {

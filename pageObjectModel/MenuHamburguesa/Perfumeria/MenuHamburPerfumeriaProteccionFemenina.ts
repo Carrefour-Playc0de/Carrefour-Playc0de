@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaProteccionFemenina extends BasePage {
         await this.click(this.PROTECCION_FEMENINA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaProteccionFemenina(): Promise<void> {

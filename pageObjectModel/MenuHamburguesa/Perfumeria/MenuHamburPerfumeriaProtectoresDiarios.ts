@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaProtectoresDiarios extends BasePage {
         await this.click(this.PROTECTORES_DIARIOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaProtectoresDiarios(): Promise<void> {

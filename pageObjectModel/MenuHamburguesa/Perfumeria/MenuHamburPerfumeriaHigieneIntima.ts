@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaHigieneIntima extends BasePage {
         await this.click(this.HIGIENE_INTIMA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaHigieneIntima(): Promise<void> {

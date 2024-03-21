@@ -1841,33 +1841,7 @@ const test = baseTest.extend<{
         await use(loginPage)
     },
 
-    menuHamburPerfumeriaJabones: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaJabones(page, context, environment))
-    },
-    menuHamburPerfumeriaJabonesLiquidos: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaJabonesLiquidos(page, context, environment))
-    },
-    menuHamburPerfumeriaJabonesBarra: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaJabonesBarra(page, context, environment))
-    },
-    menuHamburPerfumeriaEsponjasOtrosAccesorios: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaEsponjasOtrosAccesorios(page, context, environment))
-    },
-    menuHamburPerfumeriaProteccionFemenina: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaProteccionFemenina(page, context, environment))
-    },
-    menuHamburPerfumeriaToallitasFemeninas: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaToallitasFemeninas(page, context, environment))
-    },
-    menuHamburPerfumeriaProtectoresDiarios: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaProtectoresDiarios(page, context, environment))
-    },
-    menuHamburPerfumeriaTampones: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaTampones(page, context, environment))
-    },
-    menuHamburPerfumeriaHigieneIntima: async ({ page, context }, use) => {
-        await use(new MenuHamburPerfumeriaHigieneIntima(page, context, environment))
-    },
+
 
 
 
@@ -1921,6 +1895,33 @@ const test = baseTest.extend<{
     },
     menuHamburPerfumeriaParaProtesisDentales: async ({ page, context }, use) => {
         await use(new MenuHamburPerfumeriaParaProtesisDentales(page, context, environment))
+    },
+    menuHamburPerfumeriaJabones: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaJabones(page, context, environment))
+    },
+    menuHamburPerfumeriaJabonesLiquidos: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaJabonesLiquidos(page, context, environment))
+    },
+    menuHamburPerfumeriaJabonesBarra: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaJabonesBarra(page, context, environment))
+    },
+    menuHamburPerfumeriaEsponjasOtrosAccesorios: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaEsponjasOtrosAccesorios(page, context, environment))
+    },
+    menuHamburPerfumeriaProteccionFemenina: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaProteccionFemenina(page, context, environment))
+    },
+    menuHamburPerfumeriaToallitasFemeninas: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaToallitasFemeninas(page, context, environment))
+    },
+    menuHamburPerfumeriaProtectoresDiarios: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaProtectoresDiarios(page, context, environment))
+    },
+    menuHamburPerfumeriaTampones: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaTampones(page, context, environment))
+    },
+    menuHamburPerfumeriaHigieneIntima: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaHigieneIntima(page, context, environment))
     },
 
 

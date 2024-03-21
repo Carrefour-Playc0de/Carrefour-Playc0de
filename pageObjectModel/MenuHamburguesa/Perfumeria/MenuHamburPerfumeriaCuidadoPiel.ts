@@ -2,25 +2,26 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburPerfumeriaEsponjasOtrosAccesorios extends BasePage {
+export class MenuHamburPerfumeriaJabonesLiquidos extends BasePage {
 
-    readonly ESPONJAS_OTROS_ACCESORIOS: Locator
+    readonly JABONES_LIQUIDOS: Locator
 
     private env: any
     constructor(page: Page, context: BrowserContext, environment: string) {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ESPONJAS_OTROS_ACCESORIOS = this.page.locator('//* [@id="menu-item-category-esponjas-accesorios"]')
+        this.JABONES_LIQUIDOS = this.page.locator('//* [@id="menu-item-category-jabones-liquidos"]')
     }
 
-    async clickPerfumeriaEsponjasOtrosAccesorios(): Promise<void> {
-        await this.click(this.ESPONJAS_OTROS_ACCESORIOS)
+    async clickPerfumeriaJabonesLiquidos(): Promise<void> {
+        await this.click(this.JABONES_LIQUIDOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
+        await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuHamburPerfumeriaEsponjasOtrosAccesorios(): Promise<void> {
-        await this.clickPerfumeriaEsponjasOtrosAccesorios()
+    async navigateToMenuHamburPerfumeriaJabonesLiquidos(): Promise<void> {
+        await this.clickPerfumeriaJabonesLiquidos()
     }
 }

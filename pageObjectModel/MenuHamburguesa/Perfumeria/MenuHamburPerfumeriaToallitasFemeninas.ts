@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaToallitasFemeninas extends BasePage {
         await this.click(this.TOALLITAS_FEMENINAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaToallitasFemeninas(): Promise<void> {
