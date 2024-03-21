@@ -2,27 +2,27 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuHamburPerfumeriaCuidadoPiel extends BasePage {
+export class MenuHamburPerfumeriaCremasCorporales extends BasePage {
 
-    readonly CUIDADO_PIEL: Locator
+    readonly CREMAS_CORPORALES: Locator
 
     private env: any
     constructor(page: Page, context: BrowserContext, environment: string) {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.CUIDADO_PIEL = this.page.locator('//*[@id="menu-item-category-cuidado-piel"]')
-        // Cuidado de la Piel
+        this.CREMAS_CORPORALES = this.page.locator('//*[@id="menu-item-category-cremas-corporales"]')
+        // Cremas Corporales
     }
 
-    async clickPerfumeriaCuidadoPiel(): Promise<void> {
-        await this.click(this.CUIDADO_PIEL)
+    async clickPerfumeriaCremasCorporales(): Promise<void> {
+        await this.click(this.CREMAS_CORPORALES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuHamburPerfumeriaCuidadoPiel(): Promise<void> {
-        await this.clickPerfumeriaCuidadoPiel()
+    async navigateToMenuHamburPerfumeriaCremasCorporales(): Promise<void> {
+        await this.clickPerfumeriaCremasCorporales()
     }
 }
