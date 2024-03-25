@@ -163,6 +163,19 @@ test('@Regression @MenuHamburguesa (B2C-TC-1275) Verificar que funciona el Menu 
         await menuHamburPerfumeriaHigieneIntima.clickPerfumeriaHigieneIntima()
     })
 })
+test('@xyz (B2C-TC-1276) Verificar que funciona el Menu Perfumería: Cuidado de la Piel', async ({menuHamburPerfumeriaCuidadoPiel}) => {
+
+    await test.step('Click en Cuidado de la Piel', async () => {
+        await menuHamburPerfumeriaCuidadoPiel.clickPerfumeriaCuidadoPiel()
+    })
+})
+test('@xyz () Verificar que funciona el Menu Perfumería: Cremas Faciales', async ({menuHamburPerfumeriaCremasFaciales}) => {
+
+    await test.step('Click en Cremas Faciales', async () => {
+        await menuHamburPerfumeriaCremasFaciales.clickPerfumeriaCremasFaciales()
+    })
+})
+
 
 
 

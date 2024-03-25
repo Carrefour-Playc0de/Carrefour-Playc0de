@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaCremasFaciales extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.CREMAS_FACIALES = this.page.locator('//*[@id="menu-item-category-cremas-faciales"]')
-        // Cremas Faciales
     }
 
     async clickPerfumeriaCremasFaciales(): Promise<void> {

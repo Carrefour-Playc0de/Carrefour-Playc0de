@@ -12,7 +12,6 @@ export class MenuHamburPerfumeriaCuidadoPiel extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.CUIDADO_PIEL = this.page.locator('//*[@id="menu-item-category-cuidado-piel"]')
-        // Cuidado de la Piel
     }
 
     async clickPerfumeriaCuidadoPiel(): Promise<void> {

@@ -1320,6 +1320,12 @@ import {
 import {
     MenuHamburPerfumeriaHigieneIntima
 } from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaHigieneIntima'
+import {
+    MenuHamburPerfumeriaCuidadoPiel
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCuidadoPiel'
+import {
+    MenuHamburPerfumeriaCremasFaciales
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCremasFaciales'
 
 
 
@@ -1834,6 +1840,8 @@ const test = baseTest.extend<{
     menuHamburPerfumeriaProtectoresDiarios: MenuHamburPerfumeriaProtectoresDiarios
     menuHamburPerfumeriaTampones: MenuHamburPerfumeriaTampones
     menuHamburPerfumeriaHigieneIntima: MenuHamburPerfumeriaHigieneIntima
+    menuHamburPerfumeriaCuidadoPiel: MenuHamburPerfumeriaCuidadoPiel
+    menuHamburPerfumeriaCremasFaciales: MenuHamburPerfumeriaCremasFaciales
 
 }>({
     loginPage: async ({ page, context }, use) => {
@@ -1841,6 +1849,12 @@ const test = baseTest.extend<{
         await use(loginPage)
     },
 
+    menuHamburPerfumeriaCuidadoPiel: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCuidadoPiel(page, context, environment))
+    },
+    menuHamburPerfumeriaCremasFaciales: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCremasFaciales(page, context, environment))
+    },
 
 
 
