@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaEnAerosol extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.EN_AEROSOL = this.page.locator('//*[@id="menu-item-category-femeninos"]')
-        // En Aerosol
     }
 
     async clickPerfumeriaEnAerosol(): Promise<void> {
         await this.click(this.EN_AEROSOL)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaEnAerosol(): Promise<void> {

@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaAfeitado extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.AFEITADO = this.page.locator('//* [@id="menu-item-category-afeitado"]')
-        // Afeitado
     }
 
     async clickPerfumeriaAfeitado(): Promise<void> {
         await this.click(this.AFEITADO)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaAfeitado(): Promise<void> {

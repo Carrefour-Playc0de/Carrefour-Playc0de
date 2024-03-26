@@ -18,7 +18,6 @@ export class MenuHamburPerfumeriaCuidadoPiel extends BasePage {
         await this.click(this.CUIDADO_PIEL)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaCuidadoPiel(): Promise<void> {

@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaProteccionSolar extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.PROTECCION_SOLAR = this.page.locator('//*[@id="menu-item-category-proteccion-solar"]')
-        // Proteccion Solar
     }
 
     async clickPerfumeriaProteccionSolar(): Promise<void> {
         await this.click(this.PROTECCION_SOLAR)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaProteccionSolar(): Promise<void> {

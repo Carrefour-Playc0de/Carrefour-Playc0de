@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaDesmaquillantes extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.DESMAQUILLANTES = this.page.locator('//*[@id="menu-item-category-desmaquillantes"]')
-        //
     }
 
     async clickPerfumeriaDesmaquillantes(): Promise<void> {
         await this.click(this.DESMAQUILLANTES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaDesmaquillantes(): Promise<void> {

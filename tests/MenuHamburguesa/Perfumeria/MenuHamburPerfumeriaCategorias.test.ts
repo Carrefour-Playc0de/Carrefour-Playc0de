@@ -163,18 +163,108 @@ test('@Regression @MenuHamburguesa (B2C-TC-1275) Verificar que funciona el Menu 
         await menuHamburPerfumeriaHigieneIntima.clickPerfumeriaHigieneIntima()
     })
 })
-test('@xyz (B2C-TC-1276) Verificar que funciona el Menu Perfumería: Cuidado de la Piel', async ({menuHamburPerfumeriaCuidadoPiel}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1276) Verificar que funciona el Menu Perfumería: Cuidado de la Piel', async ({menuHamburPerfumeriaCuidadoPiel}) => {
 
     await test.step('Click en Cuidado de la Piel', async () => {
         await menuHamburPerfumeriaCuidadoPiel.clickPerfumeriaCuidadoPiel()
     })
 })
-test('@xyz () Verificar que funciona el Menu Perfumería: Cremas Faciales', async ({menuHamburPerfumeriaCremasFaciales}) => {
+test('@Regression @MenuHamburguesa (B2C-TC-1277) Verificar que funciona el Menu Perfumería: Cremas Faciales', async ({menuHamburPerfumeriaCremasFaciales}) => {
 
     await test.step('Click en Cremas Faciales', async () => {
         await menuHamburPerfumeriaCremasFaciales.clickPerfumeriaCremasFaciales()
     })
 })
+test('@Regression @MenuHamburguesa (B2C-TC-1278) Verificar que funciona el Menu Perfumería: Limpieza Facial y Exfoliantes', async ({menuHamburPerfumeriaLimpiezaFacialExfoliantes}) => {
+
+    await test.step('Click en Limpieza Facial y Exfoliantes', async () => {
+        await menuHamburPerfumeriaLimpiezaFacialExfoliantes.clickPerfumeriaLimpiezaFacialExfoliantes()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1279) Verificar que funciona el Menu Perfumería: Desmaquillantes', async ({menuHamburPerfumeriaDesmaquillantes}) => {
+
+    await test.step('Click en Desmaquillantes', async () => {
+        await menuHamburPerfumeriaDesmaquillantes.clickPerfumeriaDesmaquillantes()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1280) Verificar que funciona el Menu Perfumería: Cremas Corporales', async ({menuHamburPerfumeriaCremasCorporales}) => {
+
+    await test.step('Click en Cremas Corporales', async () => {
+        await menuHamburPerfumeriaCremasCorporales.clickPerfumeriaCremasCorporales()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1281) Verificar que funciona el Menu Perfumería: Cremas para Manos', async ({menuHamburPerfumeriaCremasManos}) => {
+
+    await test.step('Click en Cremas para Manos', async () => {
+        await menuHamburPerfumeriaCremasManos.clickPerfumeriaCremasManos()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1282) Verificar que funciona el Menu Perfumería: Cuidado Labial', async ({menuHamburPerfumeriaCuidadoLabial}) => {
+
+    await test.step('Click en Cuidado Labial', async () => {
+        await menuHamburPerfumeriaCuidadoLabial.clickPerfumeriaCuidadoLabial()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1283) Verificar que funciona el Menu Perfumería: Proteccion Solar', async ({menuHamburPerfumeriaProteccionSolar}) => {
+
+    await test.step('Click en Proteccion Solar', async () => {
+        await menuHamburPerfumeriaProteccionSolar.clickPerfumeriaProteccionSolar()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1284) Verificar que funciona el Menu Perfumería: Antitranspirantes y Desodorantes', async ({menuHamburPerfumeriaAntitranspirantesDesodorantes}) => {
+
+    await test.step('Click en Antitranspirantes y Desodorantes', async () => {
+        await menuHamburPerfumeriaAntitranspirantesDesodorantes.clickPerfumeriaAntitranspirantesDesodorantes()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1285) Verificar que funciona el Menu Perfumería: En Aerosol', async ({menuHamburPerfumeriaEnAerosol}) => {
+
+    await test.step('Click en En Aerosol', async () => {
+        await menuHamburPerfumeriaEnAerosol.clickPerfumeriaEnAerosol()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1286) Verificar que funciona el Menu Perfumería: En Barra y Roll On', async ({menuHamburPerfumeriaEnBarraRollOn}) => {
+
+    await test.step('Click en En Barra y Roll On', async () => {
+        await menuHamburPerfumeriaEnBarraRollOn.clickPerfumeriaEnBarraRollOn()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1287) Verificar que funciona el Menu Perfumería: Cuidado Corporal', async ({menuHamburPerfumeriaCuidadoCorporal}) => {
+
+    await test.step('Click en Cuidado Corporal', async () => {
+        await menuHamburPerfumeriaCuidadoCorporal.clickPerfumeriaCuidadoCorporal()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1288) Verificar que funciona el Menu Perfumería: Depilacion', async ({menuHamburPerfumeriaDepilacion}) => {
+
+    await test.step('Click en Depilacion', async () => {
+        await menuHamburPerfumeriaDepilacion.clickPerfumeriaDepilacion()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1289) Verificar que funciona el Menu Perfumería: Afeitado', async ({menuHamburPerfumeriaAfeitado}) => {
+
+    await test.step('Click en Afeitado', async () => {
+        await menuHamburPerfumeriaAfeitado.clickPerfumeriaAfeitado()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1290) Verificar que funciona el Menu Perfumería: Cuidado de los Pies', async ({menuHamburPerfumeriaCuidadoPies}) => {
+
+    await test.step('Click en Cuidado de los Pies', async () => {
+        await menuHamburPerfumeriaCuidadoPies.clickPerfumeriaCuidadoPies()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1291) Verificar que funciona el Menu Perfumería: Repelentes', async ({menuHamburPerfumeriaRepelentes}) => {
+
+    await test.step('Click en Repelentes', async () => {
+        await menuHamburPerfumeriaRepelentes.clickPerfumeriaRepelentes()
+    })
+})
+// test('@xyz () Verificar que funciona el Menu Perfumería: ', async ({}) => {
+//
+//     await test.step('Click en ', async () => {
+//         await menuHamburPerfumeriaCremasFaciales.clickPerfumeriaCremasFaciales()
+//     })
+// })
 
 
 

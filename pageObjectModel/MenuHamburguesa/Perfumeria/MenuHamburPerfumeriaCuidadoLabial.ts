@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaCuidadoLabial extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.CUIDADO_LABIAL = this.page.locator('//*[@id="menu-item-category-cuidado-labial"]')
-        // Cuidado Labial
     }
 
     async clickPerfumeriaCuidadoLabial(): Promise<void> {
         await this.click(this.CUIDADO_LABIAL)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaCuidadoLabial(): Promise<void> {

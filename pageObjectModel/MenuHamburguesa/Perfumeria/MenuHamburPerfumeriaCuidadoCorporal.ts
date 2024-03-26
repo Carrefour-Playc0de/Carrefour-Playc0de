@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaCuidadoCorporal extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.CUIDADO_CORPORAL = this.page.locator('//* [@id="menu-item-category-cuidado-corporal"]')
-        // Cuidado Corporal
     }
 
     async clickPerfumeriaCuidadoCorporal(): Promise<void> {
         await this.click(this.CUIDADO_CORPORAL)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaCuidadoCorporal(): Promise<void> {

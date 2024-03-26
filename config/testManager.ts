@@ -1326,6 +1326,48 @@ import {
 import {
     MenuHamburPerfumeriaCremasFaciales
 } from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCremasFaciales'
+import {
+    MenuHamburPerfumeriaLimpiezaFacialExfoliantes
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaLimpiezaFacialExfoliantes'
+import {
+    MenuHamburPerfumeriaDesmaquillantes
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaDesmaquillantes'
+import {
+    MenuHamburPerfumeriaCremasCorporales
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCremasCorporales'
+import {
+    MenuHamburPerfumeriaCremasManos
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCremasManos'
+import {
+    MenuHamburPerfumeriaCuidadoLabial
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCuidadoLabial'
+import {
+    MenuHamburPerfumeriaProteccionSolar
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaProteccionSolar'
+import {
+    MenuHamburPerfumeriaAntitranspirantesDesodorantes
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaAntitranspirantesDesodorantes'
+import {
+    MenuHamburPerfumeriaEnAerosol
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaEnAerosol'
+import {
+    MenuHamburPerfumeriaEnBarraRollOn
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaEnBarraRollOn'
+import {
+    MenuHamburPerfumeriaCuidadoCorporal
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCuidadoCorporal'
+import {
+    MenuHamburPerfumeriaDepilacion
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaDepilacion'
+import {
+    MenuHamburPerfumeriaAfeitado
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaAfeitado'
+import {
+    MenuHamburPerfumeriaCuidadoPies
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaCuidadoPies'
+import {
+    MenuHamburPerfumeriaRepelentes
+} from '../pageObjectModel/MenuHamburguesa/Perfumeria/MenuHamburPerfumeriaRepelentes'
 
 
 
@@ -1842,6 +1884,20 @@ const test = baseTest.extend<{
     menuHamburPerfumeriaHigieneIntima: MenuHamburPerfumeriaHigieneIntima
     menuHamburPerfumeriaCuidadoPiel: MenuHamburPerfumeriaCuidadoPiel
     menuHamburPerfumeriaCremasFaciales: MenuHamburPerfumeriaCremasFaciales
+    menuHamburPerfumeriaLimpiezaFacialExfoliantes: MenuHamburPerfumeriaLimpiezaFacialExfoliantes
+    menuHamburPerfumeriaDesmaquillantes: MenuHamburPerfumeriaDesmaquillantes
+    menuHamburPerfumeriaCremasCorporales: MenuHamburPerfumeriaCremasCorporales
+    menuHamburPerfumeriaCremasManos: MenuHamburPerfumeriaCremasManos
+    menuHamburPerfumeriaCuidadoLabial: MenuHamburPerfumeriaCuidadoLabial
+    menuHamburPerfumeriaProteccionSolar: MenuHamburPerfumeriaProteccionSolar
+    menuHamburPerfumeriaAntitranspirantesDesodorantes: MenuHamburPerfumeriaAntitranspirantesDesodorantes
+    menuHamburPerfumeriaEnAerosol: MenuHamburPerfumeriaEnAerosol
+    menuHamburPerfumeriaEnBarraRollOn: MenuHamburPerfumeriaEnBarraRollOn
+    menuHamburPerfumeriaCuidadoCorporal: MenuHamburPerfumeriaCuidadoCorporal
+    menuHamburPerfumeriaDepilacion: MenuHamburPerfumeriaDepilacion
+    menuHamburPerfumeriaAfeitado: MenuHamburPerfumeriaAfeitado
+    menuHamburPerfumeriaCuidadoPies: MenuHamburPerfumeriaCuidadoPies
+    menuHamburPerfumeriaRepelentes: MenuHamburPerfumeriaRepelentes
 
 }>({
     loginPage: async ({ page, context }, use) => {
@@ -1849,12 +1905,61 @@ const test = baseTest.extend<{
         await use(loginPage)
     },
 
+    menuHamburPerfumeriaProteccionSolar: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaProteccionSolar(page, context, environment))
+    },
+    menuHamburPerfumeriaAntitranspirantesDesodorantes: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaAntitranspirantesDesodorantes(page, context, environment))
+    },
+    menuHamburPerfumeriaEnAerosol: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaEnAerosol(page, context, environment))
+    },
+    menuHamburPerfumeriaEnBarraRollOn: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaEnBarraRollOn(page, context, environment))
+    },
+    menuHamburPerfumeriaCuidadoCorporal: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCuidadoCorporal(page, context, environment))
+    },
+    menuHamburPerfumeriaDepilacion: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaDepilacion(page, context, environment))
+    },
+    menuHamburPerfumeriaAfeitado: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaAfeitado(page, context, environment))
+    },
+    menuHamburPerfumeriaCuidadoPies: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCuidadoPies(page, context, environment))
+    },
+    menuHamburPerfumeriaRepelentes: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaRepelentes(page, context, environment))
+    },
+
+
+
+
     menuHamburPerfumeriaCuidadoPiel: async ({ page, context }, use) => {
         await use(new MenuHamburPerfumeriaCuidadoPiel(page, context, environment))
     },
     menuHamburPerfumeriaCremasFaciales: async ({ page, context }, use) => {
         await use(new MenuHamburPerfumeriaCremasFaciales(page, context, environment))
     },
+    menuHamburPerfumeriaLimpiezaFacialExfoliantes: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaLimpiezaFacialExfoliantes(page, context, environment))
+    },
+    menuHamburPerfumeriaDesmaquillantes: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaDesmaquillantes(page, context, environment))
+    },
+    menuHamburPerfumeriaCremasCorporales: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCremasCorporales(page, context, environment))
+    },
+    menuHamburPerfumeriaCremasManos: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCremasManos(page, context, environment))
+    },
+    menuHamburPerfumeriaCuidadoLabial: async ({ page, context }, use) => {
+        await use(new MenuHamburPerfumeriaCuidadoLabial(page, context, environment))
+    },
+
+
+
 
 
 

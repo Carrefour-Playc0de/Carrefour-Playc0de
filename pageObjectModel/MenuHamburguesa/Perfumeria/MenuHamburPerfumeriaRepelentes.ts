@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaRepelentes extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.REPELENTES = this.page.locator('//* [@id="menu-item-category-repelentes"]')
-        // Repelentes
     }
 
     async clickPerfumeriaRepelentes(): Promise<void> {
         await this.click(this.REPELENTES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaRepelentes(): Promise<void> {

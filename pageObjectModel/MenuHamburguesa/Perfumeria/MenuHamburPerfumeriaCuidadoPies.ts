@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaCuidadoPies extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.CUIDADO_PIES = this.page.locator('//* [@id="menu-item-category-cuidado-pies"]')
-        // Cuidado de los Pies
     }
 
     async clickPerfumeriaCuidadoPies(): Promise<void> {
         await this.click(this.CUIDADO_PIES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaCuidadoPies(): Promise<void> {

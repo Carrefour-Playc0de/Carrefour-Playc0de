@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaCremasManos extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.CREMAS_MANOS = this.page.locator('//*[@id="menu-item-category-cremas-manos"]')
-        // Cremas para Manos
     }
 
     async clickPerfumeriaCremasManos(): Promise<void> {
         await this.click(this.CREMAS_MANOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaCremasManos(): Promise<void> {
