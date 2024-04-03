@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaTapabocasMascaras extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.TAPABOCAS_MASCARAS = this.page.locator('//* [@id="menu-item-category-tapabocas-mascaras"]')
-        // Tapabocas y Mascaras
     }
 
     async clickPerfumeriaTapabocasMascaras(): Promise<void> {
         await this.click(this.TAPABOCAS_MASCARAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaTapabocasMascaras(): Promise<void> {

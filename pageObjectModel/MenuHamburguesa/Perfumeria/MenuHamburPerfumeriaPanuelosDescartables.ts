@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaPanuelosDescartables extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.PANUELOS_DESCARTABLES = this.page.locator('//* [@id="menu-item-category-pañuelos-descartables"]')
-        // Panuelos Descartables
     }
 
     async clickPerfumeriaPanuelosDescartables(): Promise<void> {
         await this.click(this.PANUELOS_DESCARTABLES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaPanuelosDescartables(): Promise<void> {

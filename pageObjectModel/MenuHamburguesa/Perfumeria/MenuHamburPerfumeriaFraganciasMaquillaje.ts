@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaFraganciasMaquillaje extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.FRAGANCIAS_MAQUILLAJE = this.page.locator('//* [@id="menu-item-category-fragancias-y-maquillajes"]')
-        // Fragancias y Maquillaje
     }
 
     async clickPerfumeriaFraganciasMaquillaje(): Promise<void> {
         await this.click(this.FRAGANCIAS_MAQUILLAJE)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaFraganciasMaquillaje(): Promise<void> {

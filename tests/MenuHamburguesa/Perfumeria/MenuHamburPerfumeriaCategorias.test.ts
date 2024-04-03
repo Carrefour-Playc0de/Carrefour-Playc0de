@@ -1,6 +1,5 @@
 import test from '../../../config/testManager'
 
-// We can use steps like this to reproduce Cucumber formatting
 test.beforeEach(async ({ mainPageAndAcceptCookies, menuHamburguesa, menuHamburPerfumeria}) => {
     await test.step('Navigate to Carrefour page and Accept Cookies', async () => {
         await mainPageAndAcceptCookies.navigateToMainPageAndAcceptCookies()
@@ -259,28 +258,63 @@ test('@Regression @MenuHamburguesa (B2C-TC-1291) Verificar que funciona el Menu 
         await menuHamburPerfumeriaRepelentes.clickPerfumeriaRepelentes()
     })
 })
-// test('@xyz () Verificar que funciona el Menu Perfumería: ', async ({}) => {
-//
-//     await test.step('Click en ', async () => {
-//         await menuHamburPerfumeriaCremasFaciales.clickPerfumeriaCremasFaciales()
-//     })
-// })
+test('@Regression @MenuHamburguesa (B2C-TC-1299) Verificar que funciona el Menu Perfumería: Algodones e Hisopos', async ({menuHamburPerfumeriaAlgodonesHisopos}) => {
 
+    await test.step('Click en Algodones e Hisopos', async () => {
+        await menuHamburPerfumeriaAlgodonesHisopos.clickPerfumeriaAlgodonesHisopos()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1300) Verificar que funciona el Menu Perfumería: Farmacia', async ({menuHamburPerfumeriaFarmacia}) => {
 
+    await test.step('Click en Farmacia', async () => {
+        await menuHamburPerfumeriaFarmacia.clickPerfumeriaFarmacia()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1301) Verificar que funciona el Menu Perfumería: Farmacia General', async ({menuHamburPerfumeriaFarmaciaGeneral}) => {
 
+    await test.step('Click en Farmacia General', async () => {
+        await menuHamburPerfumeriaFarmaciaGeneral.clickPerfumeriaFarmaciaGeneral()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1302) Verificar que funciona el Menu Perfumería: Preservativos', async ({menuHamburPerfumeriaPreservativos}) => {
 
+    await test.step('Click en Preservativos', async () => {
+        await menuHamburPerfumeriaPreservativos.clickPerfumeriaPreservativos()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1303) Verificar que funciona el Menu Perfumería: Tapabocas y Mascaras', async ({menuHamburPerfumeriaTapabocasMascaras}) => {
 
+    await test.step('Click en Tapabocas y Mascaras', async () => {
+        await menuHamburPerfumeriaTapabocasMascaras.clickPerfumeriaTapabocasMascaras()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1304) Verificar que funciona el Menu Perfumería: Panuelos Descartables', async ({menuHamburPerfumeriaPanuelosDescartables}) => {
 
+    await test.step('Click en Panuelos Descartables', async () => {
+        await menuHamburPerfumeriaPanuelosDescartables.clickPerfumeriaPanuelosDescartables()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1305) Verificar que funciona el Menu Perfumería: Proteccion para Adultos', async ({menuHamburPerfumeriaProteccionAdultos}) => {
 
+    await test.step('Click en Proteccion para Adultos', async () => {
+        await menuHamburPerfumeriaProteccionAdultos.clickPerfumeriaProteccionAdultos()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1306) Verificar que funciona el Menu Perfumería: Fragancias y Maquillaje', async ({menuHamburPerfumeriaFraganciasMaquillaje}) => {
 
+    await test.step('Click en Fragancias y Maquillaje', async () => {
+        await menuHamburPerfumeriaFraganciasMaquillaje.clickPerfumeriaFraganciasMaquillaje()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1307) Verificar que funciona el Menu Perfumería: Fragancias', async ({menuHamburPerfumeriaFragancias}) => {
 
+    await test.step('Click en Fragancias', async () => {
+        await menuHamburPerfumeriaFragancias.clickPerfumeriaFragancias()
+    })
+})
+test('@Regression @MenuHamburguesa (B2C-TC-1308) Verificar que funciona el Menu Perfumería: Maquillajes', async ({menuHamburPerfumeriaMaquillajes}) => {
 
-
-
-
-
-
-
-
-
-
+    await test.step('Click en Maquillajes', async () => {
+        await menuHamburPerfumeriaMaquillajes.clickPerfumeriaMaquillajes()
+    })
+})

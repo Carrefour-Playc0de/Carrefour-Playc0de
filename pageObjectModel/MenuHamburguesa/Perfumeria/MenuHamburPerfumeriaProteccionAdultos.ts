@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaProteccionAdultos extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.PROTECCION_ADULTOS = this.page.locator('//* [@id="menu-item-category-proteccion-adultos"]')
-        // Proteccion para Adultos
     }
 
     async clickPerfumeriaProteccionAdultos(): Promise<void> {
         await this.click(this.PROTECCION_ADULTOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaProteccionAdultos(): Promise<void> {

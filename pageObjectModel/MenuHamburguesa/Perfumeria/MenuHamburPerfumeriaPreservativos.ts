@@ -12,14 +12,12 @@ export class MenuHamburPerfumeriaPreservativos extends BasePage {
         this.env = loadEnvironmentConfig(environment)
 
         this.PRESERVATIVOS = this.page.locator('//* [@id="menu-item-category-preservativos"]')
-        // Preservativos
     }
 
     async clickPerfumeriaPreservativos(): Promise<void> {
         await this.click(this.PRESERVATIVOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburPerfumeriaPreservativos(): Promise<void> {
