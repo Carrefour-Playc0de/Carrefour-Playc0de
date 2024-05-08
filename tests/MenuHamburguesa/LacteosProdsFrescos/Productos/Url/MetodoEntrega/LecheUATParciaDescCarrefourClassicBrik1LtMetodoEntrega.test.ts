@@ -55,7 +55,7 @@ test.beforeEach(async ({urlLecheUATParciaDescCarrefourClassicBrik1Lt, onlyAccept
 
 })
 
-test('@CarritoTest @Regression (ID por definir) ', async ({tiendaRetiroDrive}) => {
+test('(ID por definir) ', async ({tiendaRetiroDrive}) => {
 
 
 

@@ -32,7 +32,7 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, toastTuUltimoCarri
 
 })
 
-test('@Regression (B2C-TC-) Tarjeta Credito', async ({carritoBotonFinalizarCompra}) => {
+test('(B2C-TC-) Tarjeta Credito', async ({carritoBotonFinalizarCompra}) => {
 
 
     await test.step('Click en el boton FINALIZAR COMPRA', async () => {
@@ -48,7 +48,7 @@ test('@Regression (B2C-TC-) Tarjeta Credito', async ({carritoBotonFinalizarCompr
 
 })
 
-
+//@Regression
 
 // await test.step('Click en SELECCIONA TIENDA', async () => {
 //     await seleccionaTienda.clickSeleccionaTienda()

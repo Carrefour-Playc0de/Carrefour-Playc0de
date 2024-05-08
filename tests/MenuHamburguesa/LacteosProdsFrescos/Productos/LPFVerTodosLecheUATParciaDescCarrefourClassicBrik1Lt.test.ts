@@ -16,10 +16,11 @@ test.beforeEach(async ({mainPageAndAcceptCookies, menuHamburguesa, menuHamburLac
     })
 })
 
-test('@Smoke @Regression @Productos (B2C-TC-1102) Verificar que al clickear en Leche UAT parcialmente descremada Carrefour classic brik 1Lt funciona correctamente', async ({lPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt}) => {
+test('(B2C-TC-1102) Verificar que al clickear en Leche UAT parcialmente descremada Carrefour classic brik 1Lt funciona correctamente', async ({lPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt}) => {
 
     await test.step('Click en Leche UAT parcialmente descremada Carrefour classic brik 1Lt', async () => {
         await lPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt.navigateToLPFVerTodosLecheUATParciaDescCarrefourClassicBrik1Lt()
     })
 })
 
+//@Smoke @Regression @Productos
