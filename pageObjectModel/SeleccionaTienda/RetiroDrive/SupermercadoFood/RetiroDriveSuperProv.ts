@@ -12,16 +12,15 @@ export class RetiroDriveSuperProv extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.SUPERMERCADO_FOOD = this.page.locator('//div [@data-name="Food"]')
-        // this.PROVINCIA = this.page.locator('.css-1j9dihh-control').first()
-        this.PROVINCIA = this.page.locator("//span[normalize-space()='PROVINCIA']")
+        this.SUPERMERCADO_FOOD = this.page.locator('//p[normalize-space()="Supermercado"]')
+        this.PROVINCIA = this.page.locator("//div[@class='css-b0wje']")
     }
 
     async clickSupermercadoFood(): Promise<void> {
         await this.click(this.SUPERMERCADO_FOOD)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
+        await this.page.waitForTimeout(1000)
     }
     async clickProvincia(): Promise<void> {
         await this.click(this.PROVINCIA)

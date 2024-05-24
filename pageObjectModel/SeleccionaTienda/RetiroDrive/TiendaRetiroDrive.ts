@@ -11,7 +11,8 @@ export class TiendaRetiroDrive extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.RETIRO_O_DRIVE = this.page.locator("//span[normalize-space()='RETIRO O DRIVE']")
+        // this.RETIRO_O_DRIVE = this.page.locator("//span[normalize-space()='RETIRO O DRIVE']")
+        this.RETIRO_O_DRIVE = this.page.locator("//span[normalize-space()='Retirá tu pedido gratis']")
     }
 
     async clickRetiroDrive(): Promise<void> {

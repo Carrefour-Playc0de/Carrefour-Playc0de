@@ -12,7 +12,8 @@ export class RetiroDriveSuperProvCiudAutonoBsAsPartido extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.PARTIDO = this.page.locator("//span[normalize-space()='PARTIDO']")
+        // this.PARTIDO = this.page.locator("//span[normalize-space()='PARTIDO']")
+        this.PARTIDO = this.page.locator("//span[normalize-space()='Seleccionar']")
     }
 
     async clickPartido(): Promise<void> {

@@ -23,9 +23,6 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, 
     await test.step('Click en RETIRO O DRIVE', async () => {
         await tiendaRetiroDrive.navigateToTiendaRetiroDrive()
     })
-    await test.step(`Click en boton CONTINUAR > del modal Como querés recibir tu compra`, async () => {
-        await seleccionaTiendaBotonContinuar.clickSelecTiendaBotonContinuar()
-    })
     await test.step('Click en Supermercado', async () => {
         await retiroDriveSuperProv.clickSupermercadoFood()
     })

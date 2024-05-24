@@ -1,7 +1,7 @@
 import test from '../../../../config/testManager'
 
 // We can use steps like this to reproduce Cucumber formatting
-test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, toastTuUltimoCarritoHaSidoRecuperado, tiendaRetiroDrive, seleccionaTiendaBotonContinuar, retiroDriveSuperProv}) => {
+test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, tiendaRetiroDrive, retiroDriveSuperProv}) => {
     await test.step('Navigate to Carrefour page and Accept Cookies', async () => {
         await mainPageAndAcceptCookies.navigateToMainPageAndAcceptCookies()
     })
@@ -22,9 +22,6 @@ test.beforeEach(async ({ mainPageAndAcceptCookies, loginPage, seleccionaTienda, 
     })
     await test.step('Click en RETIRO O DRIVE', async () => {
         await tiendaRetiroDrive.navigateToTiendaRetiroDrive()
-    })
-    await test.step(`Click en boton CONTINUAR > del modal Como querés recibir tu compra`, async () => {
-        await seleccionaTiendaBotonContinuar.clickSelecTiendaBotonContinuar()
     })
     await test.step('Click en Supermercado', async () => {
         await retiroDriveSuperProv.clickSupermercadoFood()
